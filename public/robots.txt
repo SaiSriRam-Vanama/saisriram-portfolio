@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://saisriramvanama.vercel.app/sitemap.xml

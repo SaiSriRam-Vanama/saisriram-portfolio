@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://saisriramvanama.vercel.app/</loc>
+    <changefreq> monthly </changefreq>
+    <priority> 1.0 </priority>
+  </url>
+  <url>
+    <loc>https://saisriramvanama.vercel.app/projects/cloudburst-ai</loc>
+    <changefreq> monthly </changefreq>
+    <priority> 0.8 </priority>
+  </url>
+  <url>
+    <loc>https://saisriramvanama.vercel.app/projects/ai-career-autopilot</loc>
+    <changefreq> monthly </changefreq>
+    <priority> 0.8 </priority>
+  </url>
+  <url>
+    <loc>https://saisriramvanama.vercel.app/projects/ai-auto-healing-system</loc>
+    <changefreq> monthly </changefreq>
+    <priority> 0.8 </priority>
+  </url>
+  <url>
+    <loc>https://saisriramvanama.vercel.app/projects/smart-park-iq</loc>
+    <changefreq> monthly </changefreq>
+    <priority> 0.8 </priority>
+  </url>
+  <url>
+    <loc>https://saisriramvanama.vercel.app/projects/pulselens-ai</loc>
+    <changefreq> monthly </changefreq>
+    <priority> 0.8 </priority>
+  </url>
+  <url>
+    <loc>https://saisriramvanama.vercel.app/projects/cyber-hygiene-assistant</loc>
+    <changefreq> monthly </changefreq>
+    <priority> 0.8 </priority>
+  </url>
+</urlset>
