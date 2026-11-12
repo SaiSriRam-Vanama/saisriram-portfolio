@@ -1,0 +1,151 @@
+{
+  "schema": 1,
+  "slug": "smart-park-iq",
+  "status": "ok",
+  "repo": {
+    "owner": "SaiSriRam-Vanama",
+    "name": "Park-IQ",
+    "url": "https://github.com/SaiSriRam-Vanama/Park-IQ"
+  },
+  "readme": {
+    "path": "README.md",
+    "htmlUrl": "https://github.com/SaiSriRam-Vanama/Park-IQ/blob/main/README.md",
+    "branch": "main",
+    "sha": "1aab7a14723e70f3b5b55d554173e4ab1973257b",
+    "etag": "W/\"1aab7a14723e70f3b5b55d554173e4ab1973257b\"",
+    "via": "api",
+    "fetchedAt": "2026-11-12T11:18:34.133Z",
+    "bytes": 6926
+  },
+  "title": null,
+  "description": "ParkIQ is a production-ready parking management platform showcasing modern full-stack architecture with microservices, real-time booking, and payment…",
+  "droppedTitle": true,
+  "headings": [
+    {
+      "id": "readme-tech-stack--badges",
+      "text": "Tech Stack & Badges",
+      "level": 2
+    },
+    {
+      "id": "readme-overview",
+      "text": "Overview",
+      "level": 2
+    },
+    {
+      "id": "readme-system-architecture",
+      "text": "System Architecture",
+      "level": 2
+    },
+    {
+      "id": "readme-project-structure",
+      "text": "Project Structure",
+      "level": 2
+    },
+    {
+      "id": "readme-features",
+      "text": "Features",
+      "level": 2
+    },
+    {
+      "id": "readme-career-highlights",
+      "text": "Career Highlights",
+      "level": 2
+    },
+    {
+      "id": "readme-professional-profile",
+      "text": "Professional Profile",
+      "level": 2
+    },
+    {
+      "id": "readme-tech-stack",
+      "text": "Tech Stack",
+      "level": 2
+    },
+    {
+      "id": "readme-prerequisites",
+      "text": "Prerequisites",
+      "level": 2
+    },
+    {
+      "id": "readme-local-setup",
+      "text": "Local Setup",
+      "level": 2
+    },
+    {
+      "id": "readme-github-setup",
+      "text": "GitHub Setup",
+      "level": 2
+    },
+    {
+      "id": "readme-vercel-deployment",
+      "text": "Vercel Deployment",
+      "level": 2
+    },
+    {
+      "id": "readme-default-admin",
+      "text": "Default Admin",
+      "level": 2
+    },
+    {
+      "id": "readme-api-reference",
+      "text": "API Reference",
+      "level": 2
+    },
+    {
+      "id": "readme-auth",
+      "text": "Auth",
+      "level": 3
+    },
+    {
+      "id": "readme-parking",
+      "text": "Parking",
+      "level": 3
+    },
+    {
+      "id": "readme-bookings",
+      "text": "Bookings",
+      "level": 3
+    },
+    {
+      "id": "readme-pricing",
+      "text": "Pricing",
+      "level": 3
+    },
+    {
+      "id": "readme-payments",
+      "text": "Payments",
+      "level": 3
+    },
+    {
+      "id": "readme-copyright-and-usage",
+      "text": "Copyright and Usage",
+      "level": 2
+    },
+    {
+      "id": "readme-license",
+      "text": "License",
+      "level": 2
+    }
+  ],
+  "hasDiagrams": false,
+  "stats": {
+    "codeBlocks": 6,
+    "diagrams": 0,
+    "tables": 0,
+    "taskItems": 0,
+    "images": 11,
+    "words": 774,
+    "links": 6,
+    "headings": 21
+  },
+  "verifiedTags": [
+    "Node.js",
+    "React",
+    "MongoDB",
+    "Stripe",
+    "Socket.IO"
+  ],
+  "unverifiedTags": [],
+  "stale": false,
+  "html": "<blockquote>\n<p><strong>Intelligent Parking Management System</strong> | AI-Powered Microservices | Full-Stack Demo</p>\n<p><strong>Live Demo:</strong> <a href=\"https://smart-park-iq.vercel.app\" target=\"_blank\" rel=\"noopener noreferrer\">smart-park-iq.vercel.app</a> <em>(first load may take 30-60s due to free-tier cold starts)</em></p>\n</blockquote>\n<p><strong>ParkIQ</strong> is a production-ready parking management platform showcasing modern full-stack architecture with microservices, real-time booking, and payment integration.</p>\n<hr />\n<h2 id=\"readme-tech-stack--badges\">Tech Stack &amp; Badges<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-tech-stack--badges\">#</a></h2>\n<p><img src=\"https://img.shields.io/badge/Node.js-v20%2B-339933?style=for-the-badge&amp;logo=node.js\" alt=\"Node.js\" loading=\"lazy\" decoding=\"async\" />\n<img src=\"https://img.shields.io/badge/Express-Backend-90C53F?style=for-the-badge&amp;logo=express\" alt=\"Express\" loading=\"lazy\" decoding=\"async\" />\n<img src=\"https://img.shields.io/badge/MongoDB-Data-00ED64?style=for-the-badge&amp;logo=mongodb\" alt=\"MongoDB\" loading=\"lazy\" decoding=\"async\" />\n<img src=\"https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&amp;logo=react\" alt=\"React\" loading=\"lazy\" decoding=\"async\" />\n<img src=\"https://img.shields.io/badge/Vite-Frontend-646CFF?style=for-the-badge&amp;logo=vite\" alt=\"Vite\" loading=\"lazy\" decoding=\"async\" />\n<img src=\"https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&amp;logo=tailwind-css\" alt=\"Tailwind CSS\" loading=\"lazy\" decoding=\"async\" />\n<img src=\"https://img.shields.io/badge/Stripe-Payments-635BFF?style=for-the-badge&amp;logo=stripe\" alt=\"Stripe\" loading=\"lazy\" decoding=\"async\" />\n<img src=\"https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&amp;logo=docker\" alt=\"Docker\" loading=\"lazy\" decoding=\"async\" /></p>\n<p><img src=\"https://img.shields.io/badge/License-MIT-blue?style=for-the-badge\" alt=\"License\" loading=\"lazy\" decoding=\"async\" />\n<img src=\"https://img.shields.io/badge/Status-Production--Ready-brightgreen?style=for-the-badge\" alt=\"Status\" loading=\"lazy\" decoding=\"async\" />\n<img src=\"https://img.shields.io/badge/Architecture-Microservices-FF6B6B?style=for-the-badge\" alt=\"Microservices\" loading=\"lazy\" decoding=\"async\" /></p>\n<h2 id=\"readme-overview\">Overview<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-overview\">#</a></h2>\n<p>ParkIQ is a <strong>microservices-based parking platform</strong> that handles user authentication, slot management, booking, pricing, and payments. The frontend is a Vite React app and the backend is split into an API gateway plus dedicated services. Designed to be scalable, maintainable, and production-ready.</p>\n<h2 id=\"readme-system-architecture\">System Architecture<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-system-architecture\">#</a></h2>\n<pre><code class=\"hljs language-text\">User Browser\n    |\n    v\nFrontend (React + Vite)\n    |\n    v\nAPI Gateway (Express)\n    |\n    +--&gt; User Service\n    +--&gt; Parking Service\n    +--&gt; Booking Service\n    +--&gt; Pricing Service\n    +--&gt; Payment Service\n    |\n    v\nMongoDB + External Services\n</code></pre>\n<p>The frontend handles the UI and routing, the gateway centralizes request flow, and each service owns one business domain. This structure makes the project easier to scale, test, and extend.</p>\n<h2 id=\"readme-project-structure\">Project Structure<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-project-structure\">#</a></h2>\n<ul>\n<li><code>frontend/</code> - React + Vite UI</li>\n<li><code>api-gateway/</code> - Express gateway and routing layer</li>\n<li><code>services/user-service/</code> - Authentication and user profile logic</li>\n<li><code>services/parking-service/</code> - Parking slot and availability logic</li>\n<li><code>services/booking-service/</code> - Booking lifecycle and receipts</li>\n<li><code>services/pricing-service/</code> - Pricing and peak-hour calculations</li>\n<li><code>services/payment-service/</code> - Payment flows and revenue tracking</li>\n</ul>\n<h2 id=\"readme-features\">Features<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-features\">#</a></h2>\n<ul>\n<li>User registration, login, reset password, and profile management</li>\n<li>Parking slot browsing, booking, entry, exit, and cancellation</li>\n<li>Admin dashboard for slot seeding and operational management</li>\n<li>Pricing calculations with peak-hour support</li>\n<li>Payment initiation, retry flow, and booking-based payment lookup</li>\n<li>Receipt download for completed bookings</li>\n<li>Responsive frontend with routing and API integration</li>\n</ul>\n<h2 id=\"readme-career-highlights\">Career Highlights<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-career-highlights\">#</a></h2>\n<p>This project demonstrates practical full-stack and backend engineering skills that are valuable for internships and developer roles:</p>\n<ul>\n<li>Microservices architecture with a dedicated API gateway</li>\n<li>Authentication, authorization, and protected routes</li>\n<li>MongoDB data modeling and service-level separation</li>\n<li>Production-style environment configuration with <code>.env</code> examples</li>\n<li>Frontend deployment support for Vercel</li>\n<li>Backend orchestration and local multi-service startup scripts</li>\n<li>Testing coverage across services</li>\n<li>Real-world features such as booking, payment, and receipts</li>\n</ul>\n<h2 id=\"readme-professional-profile\">Professional Profile<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-professional-profile\">#</a></h2>\n<ul>\n<li>Name: Sai Sri Ram Vanama</li>\n<li>Email: <a href=\"mailto:saisriram2796@gmail.com\">saisriram2796@gmail.com</a></li>\n<li>LinkedIn: <a href=\"https://www.linkedin.com/in/saisriramv/\" target=\"_blank\" rel=\"noopener noreferrer\">saisriramv</a></li>\n</ul>\n<p>If you are reviewing this repository for hiring or collaboration, the best places to start are the architecture, features, and deployment sections above.</p>\n<h2 id=\"readme-tech-stack\">Tech Stack<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-tech-stack\">#</a></h2>\n<ul>\n<li>Node.js and Express.js</li>\n<li>MongoDB and Mongoose</li>\n<li>React 18, Vite, and React Router</li>\n<li>Tailwind CSS</li>\n<li>Axios</li>\n<li>Socket.IO client</li>\n<li>Chart.js and react-chartjs-2</li>\n<li>bcrypt, JWT, and Stripe integration</li>\n</ul>\n<h2 id=\"readme-prerequisites\">Prerequisites<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-prerequisites\">#</a></h2>\n<ul>\n<li>Node.js 20 or later</li>\n<li>npm</li>\n<li>MongoDB running locally or a MongoDB Atlas cluster</li>\n</ul>\n<h2 id=\"readme-local-setup\">Local Setup<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-local-setup\">#</a></h2>\n<p>Clone the repository:</p>\n<pre><code class=\"hljs language-powershell\">git clone https://github.com/Cypher<span class=\"hljs-literal\">-IQ</span>/Park<span class=\"hljs-literal\">-IQ</span>.git\n<span class=\"hljs-built_in\">cd</span> <span class=\"hljs-string\">\"Car Parking System\"</span>\n</code></pre>\n<p>Install dependencies for every package:</p>\n<pre><code class=\"hljs language-powershell\">npm run install:all\n</code></pre>\n<p>Create the environment files described in <a href=\"https://github.com/SaiSriRam-Vanama/Park-IQ/blob/main/ENVIRONMENT.md\" target=\"_blank\" rel=\"noopener noreferrer\">ENVIRONMENT.md</a>.</p>\n<p>Start MongoDB.</p>\n<p>Run the full app:</p>\n<pre><code class=\"hljs language-powershell\">npm run dev:all\n</code></pre>\n<p>Open the frontend in your browser:</p>\n<pre><code class=\"hljs language-text\">http://localhost:5173\n</code></pre>\n<h2 id=\"readme-github-setup\">GitHub Setup<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-github-setup\">#</a></h2>\n<p>If you are pushing this project to a new GitHub repository:</p>\n<pre><code class=\"hljs language-powershell\">git init\ngit add README.md\ngit commit <span class=\"hljs-literal\">-m</span> <span class=\"hljs-string\">\"first commit\"</span>\ngit branch <span class=\"hljs-literal\">-M</span> main\ngit remote add origin https://github.com/Cypher<span class=\"hljs-literal\">-IQ</span>/Park<span class=\"hljs-literal\">-IQ</span>.git\ngit push <span class=\"hljs-literal\">-u</span> origin main\n</code></pre>\n<p>If the remote already exists, just use <code>git add</code>, <code>git commit</code>, and <code>git push</code>.</p>\n<h2 id=\"readme-vercel-deployment\">Vercel Deployment<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-vercel-deployment\">#</a></h2>\n<p>Deploy the frontend only.</p>\n<p>Push the repository to GitHub.</p>\n<p>Open Vercel and click New Project.</p>\n<p>Import the GitHub repository.</p>\n<p>Set the Root Directory to <code>frontend</code>.</p>\n<p>Keep these settings:</p>\n<ul>\n<li>Build Command: <code>npm run build</code></li>\n<li>Output Directory: <code>dist</code></li>\n<li>Install Command: <code>npm install</code></li>\n</ul>\n<p>Add <code>VITE_API_URL</code> in Vercel and point it to your live API gateway URL.</p>\n<p>Deploy the project.</p>\n<p>The frontend Vercel settings are aligned with <a href=\"https://github.com/SaiSriRam-Vanama/Park-IQ/blob/main/frontend/vercel.json\" target=\"_blank\" rel=\"noopener noreferrer\">frontend/vercel.json</a>.</p>\n<h2 id=\"readme-default-admin\">Default Admin<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-default-admin\">#</a></h2>\n<ul>\n<li>Email: <code>admin@parkiq.com</code></li>\n<li>Password: <code>password123</code></li>\n</ul>\n<h2 id=\"readme-api-reference\">API Reference<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-api-reference\">#</a></h2>\n<h3 id=\"readme-auth\">Auth<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-auth\">#</a></h3>\n<ul>\n<li><code>POST /api/auth/register</code></li>\n<li><code>POST /api/auth/login</code></li>\n<li><code>GET /api/auth/profile</code></li>\n<li><code>PUT /api/auth/profile</code></li>\n</ul>\n<h3 id=\"readme-parking\">Parking<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-parking\">#</a></h3>\n<ul>\n<li><code>GET /api/parking/slots</code></li>\n<li><code>POST /api/parking/slots</code></li>\n<li><code>PATCH /api/parking/slots/:id/status</code></li>\n<li><code>GET /api/parking/slots/nearest</code></li>\n<li><code>POST /api/parking/slots/seed</code></li>\n</ul>\n<h3 id=\"readme-bookings\">Bookings<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-bookings\">#</a></h3>\n<ul>\n<li><code>POST /api/bookings</code></li>\n<li><code>GET /api/bookings</code></li>\n<li><code>GET /api/bookings/admin/all</code></li>\n<li><code>GET /api/bookings/:id</code></li>\n<li><code>GET /api/bookings/:id/receipt</code></li>\n<li><code>POST /api/bookings/entry</code></li>\n<li><code>POST /api/bookings/exit</code></li>\n<li><code>PATCH /api/bookings/:id/cancel</code></li>\n</ul>\n<h3 id=\"readme-pricing\">Pricing<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-pricing\">#</a></h3>\n<ul>\n<li><code>POST /api/pricing/calculate</code></li>\n<li><code>GET /api/pricing/peak-hours</code></li>\n<li><code>PUT /api/pricing/peak-hours</code></li>\n</ul>\n<h3 id=\"readme-payments\">Payments<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-payments\">#</a></h3>\n<ul>\n<li><code>POST /api/payments/initiate</code></li>\n<li><code>POST /api/payments/retry/:id</code></li>\n<li><code>GET /api/payments/booking/:id</code></li>\n<li><code>GET /api/payments/admin/revenue</code></li>\n</ul>\n<h2 id=\"readme-copyright-and-usage\">Copyright and Usage<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-copyright-and-usage\">#</a></h2>\n<p>Copyright © 2026 Sai Sri Ram Vanama. All rights reserved.</p>\n<p>Author: Sai Sri Ram Vanama</p>\n<p>LinkedIn: <a href=\"https://www.linkedin.com/in/saisriramv/\" target=\"_blank\" rel=\"noopener noreferrer\">saisriramv</a></p>\n<p>This repository is for personal and authorized use only. Do not copy, redistribute, or reuse this project or its code without permission from the author.</p>\n<h2 id=\"readme-license\">License<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-license\">#</a></h2>\n<p>MIT License applies only if the repository also includes and retains the MIT license file and terms.</p>\n"
+}

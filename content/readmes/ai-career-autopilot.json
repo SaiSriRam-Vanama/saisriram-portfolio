@@ -1,0 +1,201 @@
+{
+  "schema": 1,
+  "slug": "ai-career-autopilot",
+  "status": "ok",
+  "repo": {
+    "owner": "SaiSriRam-Vanama",
+    "name": "ai-career-autopilot",
+    "url": "https://github.com/SaiSriRam-Vanama/ai-career-autopilot"
+  },
+  "readme": {
+    "path": "README.md",
+    "htmlUrl": "https://github.com/SaiSriRam-Vanama/ai-career-autopilot/blob/main/README.md",
+    "branch": "main",
+    "sha": "51bd1ca62b5d004fb84de7f5f8f18a8fdb9ff723",
+    "etag": "W/\"51bd1ca62b5d004fb84de7f5f8f18a8fdb9ff723\"",
+    "via": "api",
+    "fetchedAt": "2026-11-12T11:18:32.762Z",
+    "bytes": 10507
+  },
+  "title": "AI Career Autopilot",
+  "description": "Your AI-powered career co-pilot — Upload your resume, discover skill gaps, get personalized 12-week learning roadmaps, track job applications, and chat with…",
+  "droppedTitle": false,
+  "headings": [
+    {
+      "id": "readme-ai-career-autopilot",
+      "text": "AI Career Autopilot",
+      "level": 1
+    },
+    {
+      "id": "readme-features-at-a-glance",
+      "text": "Features at a Glance",
+      "level": 2
+    },
+    {
+      "id": "readme-architecture",
+      "text": "Architecture",
+      "level": 2
+    },
+    {
+      "id": "readme-backend-fastapi",
+      "text": "Backend (FastAPI)",
+      "level": 3
+    },
+    {
+      "id": "readme-frontend-nextjs",
+      "text": "Frontend (Next.js)",
+      "level": 3
+    },
+    {
+      "id": "readme-database-collections-mongodb",
+      "text": "Database Collections (MongoDB)",
+      "level": 3
+    },
+    {
+      "id": "readme-tech-stack",
+      "text": "Tech Stack",
+      "level": 2
+    },
+    {
+      "id": "readme-api-endpoints",
+      "text": "API Endpoints",
+      "level": 2
+    },
+    {
+      "id": "readme-auth-auth",
+      "text": "Auth (/auth)",
+      "level": 3
+    },
+    {
+      "id": "readme-resume-resume",
+      "text": "Resume (/resume)",
+      "level": 3
+    },
+    {
+      "id": "readme-jobs-jobs",
+      "text": "Jobs (/jobs)",
+      "level": 3
+    },
+    {
+      "id": "readme-salary-salary",
+      "text": "Salary (/salary)",
+      "level": 3
+    },
+    {
+      "id": "readme-career-career",
+      "text": "Career (/career)",
+      "level": 3
+    },
+    {
+      "id": "readme-chat-chat",
+      "text": "Chat (/chat)",
+      "level": 3
+    },
+    {
+      "id": "readme-applications-applications",
+      "text": "Applications (/applications)",
+      "level": 3
+    },
+    {
+      "id": "readme-notifications-notifications",
+      "text": "Notifications (/notifications)",
+      "level": 3
+    },
+    {
+      "id": "readme-settings-settings",
+      "text": "Settings (/settings)",
+      "level": 3
+    },
+    {
+      "id": "readme-health",
+      "text": "Health",
+      "level": 3
+    },
+    {
+      "id": "readme-required-environment-variables",
+      "text": "Required Environment Variables",
+      "level": 2
+    },
+    {
+      "id": "readme-getting-started",
+      "text": "Getting Started",
+      "level": 2
+    },
+    {
+      "id": "readme-prerequisites",
+      "text": "Prerequisites",
+      "level": 3
+    },
+    {
+      "id": "readme-backend",
+      "text": "Backend",
+      "level": 3
+    },
+    {
+      "id": "readme-frontend",
+      "text": "Frontend",
+      "level": 3
+    },
+    {
+      "id": "readme-docker-both-services",
+      "text": "Docker (both services)",
+      "level": 3
+    },
+    {
+      "id": "readme-testing",
+      "text": "Testing",
+      "level": 2
+    },
+    {
+      "id": "readme-deployment",
+      "text": "Deployment",
+      "level": 2
+    },
+    {
+      "id": "readme-deployment-options",
+      "text": "Deployment Options",
+      "level": 3
+    },
+    {
+      "id": "readme-production-checklist",
+      "text": "Production Checklist",
+      "level": 3
+    },
+    {
+      "id": "readme-security",
+      "text": "Security",
+      "level": 2
+    },
+    {
+      "id": "readme-license--copyright",
+      "text": "License & Copyright",
+      "level": 2
+    },
+    {
+      "id": "readme-connect--support",
+      "text": "Connect & Support",
+      "level": 2
+    }
+  ],
+  "hasDiagrams": false,
+  "stats": {
+    "codeBlocks": 5,
+    "diagrams": 0,
+    "tables": 18,
+    "taskItems": 6,
+    "images": 14,
+    "words": 1376,
+    "links": 5,
+    "headings": 31
+  },
+  "verifiedTags": [
+    "Next.js",
+    "TypeScript",
+    "FastAPI",
+    "MongoDB",
+    "LLM"
+  ],
+  "unverifiedTags": [],
+  "stale": false,
+  "html": "<h2 id=\"readme-ai-career-autopilot\">AI Career Autopilot<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-ai-career-autopilot\">#</a></h2>\n<p><strong>Your AI-powered career co-pilot</strong> — Upload your resume, discover skill gaps, get personalized 12-week learning roadmaps, track job applications, and chat with an AI career advisor — all powered by cutting-edge LLMs and real-time job market data.</p>\n<p><strong>Live App:</strong> <a href=\"https://ai-career-autopilot.vercel.app\" target=\"_blank\" rel=\"noopener noreferrer\">https://ai-career-autopilot.vercel.app</a></p>\n<hr />\n<h3 id=\"readme-features-at-a-glance\">Features at a Glance<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-features-at-a-glance\">#</a></h3>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th>Feature</th>\n<th>What It Does</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Resume Skill Extraction</strong></td>\n<td>Upload PDF/DOCX/TXT — AI extracts skills via HuggingFace BERT NER + keyword matching</td>\n</tr>\n<tr>\n<td><strong>Job Market Analysis</strong></td>\n<td>Real-time job search via JSearch API with skill requirement extraction</td>\n</tr>\n<tr>\n<td><strong>Salary Insights</strong></td>\n<td>Market demand &amp; salary stats from Adzuna API</td>\n</tr>\n<tr>\n<td><strong>Skill Gap Analysis</strong></td>\n<td>Compares your skills vs job requirements; prioritizes by demand</td>\n</tr>\n<tr>\n<td><strong>Course Recommendations</strong></td>\n<td>Personalized courses from Coursera (with curated fallback database)</td>\n</tr>\n<tr>\n<td><strong>AI Career Roadmap</strong></td>\n<td>12-week personalized learning plan via Groq Llama 3 (DeepSeek fallback)</td>\n</tr>\n<tr>\n<td><strong>Progress Tracking</strong></td>\n<td>Track weekly task completion; archive/delete roadmaps</td>\n</tr>\n<tr>\n<td><strong>Weekly Auto-Updates</strong></td>\n<td>APScheduler cron refreshes roadmaps with latest market data</td>\n</tr>\n<tr>\n<td><strong>AI Career Advisor Chat</strong></td>\n<td>Context-aware chat powered by Groq Llama 3</td>\n</tr>\n<tr>\n<td><strong>Job Application Tracker</strong></td>\n<td>Pipeline: wishlist -&gt; applied -&gt; interviewing -&gt; offer -&gt; rejected</td>\n</tr>\n<tr>\n<td><strong>Notifications</strong></td>\n<td>System notifications with read/unread tracking</td>\n</tr>\n<tr>\n<td><strong>Google OAuth</strong></td>\n<td>Sign in with Google</td>\n</tr>\n<tr>\n<td><strong>Professional Bio Generation</strong></td>\n<td>Generate LinkedIn-style bios from keywords</td>\n</tr>\n</tbody></table></div>\n<hr />\n<h3 id=\"readme-architecture\">Architecture<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-architecture\">#</a></h3>\n<pre><code class=\"hljs\">+-----------------------+     HTTP/JSON + JWT     +-----------------------+\n|   Frontend            | &lt;---------------------&gt; |   Backend             |\n|   Next.js 16 / React  |     Port 8000           |   FastAPI (Python)    |\n|   Port 3000           |                         |   Port 8000           |\n+-----------------------+                         +-----------+-----------+\n                                                                 |\n                                                       +---------+---------+\n                                                       |    MongoDB        |\n                                                       |   (Atlas/Local)   |\n                                                       +-------------------+\n</code></pre>\n<h4 id=\"readme-backend-fastapi\">Backend (FastAPI)<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-backend-fastapi\">#</a></h4>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th>Layer</th>\n<th>Directory</th>\n<th>Purpose</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Routes</td>\n<td><code>app/routes/</code></td>\n<td>API endpoints (auth, resume, jobs, salary, career, chat, applications, notifications, settings)</td>\n</tr>\n<tr>\n<td>Services</td>\n<td><code>app/services/</code></td>\n<td>Business logic layer</td>\n</tr>\n<tr>\n<td>AI Models</td>\n<td><code>app/ai_models/</code></td>\n<td>HuggingFace NER, Groq Llama 3, DeepSeek integrations</td>\n</tr>\n<tr>\n<td>Database</td>\n<td><code>app/database/</code></td>\n<td>MongoDB connection (Motor async) + Pydantic models</td>\n</tr>\n<tr>\n<td>Utils</td>\n<td><code>app/utils/</code></td>\n<td>Helper functions</td>\n</tr>\n</tbody></table></div>\n<h4 id=\"readme-frontend-nextjs\">Frontend (Next.js)<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-frontend-nextjs\">#</a></h4>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th>Directory</th>\n<th>Purpose</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>frontend/app/</code></td>\n<td>Next.js App Router pages (landing, auth, dashboard)</td>\n</tr>\n<tr>\n<td><code>frontend/components/</code></td>\n<td>Reusable React components (auth, chat, jobs, layout, resume, roadmap, ui)</td>\n</tr>\n<tr>\n<td><code>frontend/contexts/</code></td>\n<td>AuthContext (JWT state), ThemeContext (dark/light)</td>\n</tr>\n<tr>\n<td><code>frontend/lib/api/</code></td>\n<td>Axios API client with JWT interceptor</td>\n</tr>\n<tr>\n<td><code>frontend/types/</code></td>\n<td>TypeScript type definitions</td>\n</tr>\n</tbody></table></div>\n<h4 id=\"readme-database-collections-mongodb\">Database Collections (MongoDB)<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-database-collections-mongodb\">#</a></h4>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th>Collection</th>\n<th>Purpose</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>users</code></td>\n<td>User accounts (email, hashed_password, full_name, skills, preferences)</td>\n</tr>\n<tr>\n<td><code>resumes</code></td>\n<td>Resume data, extracted skills, recommended roles</td>\n</tr>\n<tr>\n<td><code>jobs</code></td>\n<td>Job listings from JSearch API</td>\n</tr>\n<tr>\n<td><code>salary_trends</code></td>\n<td>Salary data from Adzuna API with demand scoring</td>\n</tr>\n<tr>\n<td><code>career_paths</code></td>\n<td>AI-generated roadmaps with weekly tasks &amp; progress</td>\n</tr>\n<tr>\n<td><code>chat_history</code></td>\n<td>Conversation history with AI career advisor</td>\n</tr>\n<tr>\n<td><code>applications</code></td>\n<td>Job application tracker</td>\n</tr>\n<tr>\n<td><code>notifications</code></td>\n<td>User notifications</td>\n</tr>\n</tbody></table></div>\n<hr />\n<h3 id=\"readme-tech-stack\">Tech Stack<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-tech-stack\">#</a></h3>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th>Layer</th>\n<th>Technology</th>\n<th>Badge</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Backend</strong></td>\n<td>Python 3.11+, FastAPI, Uvicorn</td>\n<td><img src=\"https://img.shields.io/badge/Python-3.11+-blue?logo=python\" alt=\"Python\" loading=\"lazy\" decoding=\"async\" /> <img src=\"https://img.shields.io/badge/FastAPI-0.109-009688?logo=fastapi\" alt=\"FastAPI\" loading=\"lazy\" decoding=\"async\" /></td>\n</tr>\n<tr>\n<td><strong>Frontend</strong></td>\n<td>Next.js 16, React 19, TypeScript</td>\n<td><img src=\"https://img.shields.io/badge/Next.js-16-000?logo=next.js\" alt=\"Next.js\" loading=\"lazy\" decoding=\"async\" /> <img src=\"https://img.shields.io/badge/React-19-61DAFB?logo=react\" alt=\"React\" loading=\"lazy\" decoding=\"async\" /> <img src=\"https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript\" alt=\"TypeScript\" loading=\"lazy\" decoding=\"async\" /></td>\n</tr>\n<tr>\n<td><strong>Database</strong></td>\n<td>MongoDB (Motor + PyMongo)</td>\n<td><img src=\"https://img.shields.io/badge/MongoDB-Motor-47A248?logo=mongodb\" alt=\"MongoDB\" loading=\"lazy\" decoding=\"async\" /></td>\n</tr>\n<tr>\n<td><strong>Auth</strong></td>\n<td>JWT (python-jose) + bcrypt + Google OAuth</td>\n<td><img src=\"https://img.shields.io/badge/Auth-JWT-000?logo=jsonwebtokens\" alt=\"JWT\" loading=\"lazy\" decoding=\"async\" /></td>\n</tr>\n<tr>\n<td><strong>AI/NLP</strong></td>\n<td>HuggingFace Transformers, Groq API, DeepSeek</td>\n<td><img src=\"https://img.shields.io/badge/HuggingFace-BERT_NER-FFD21E?logo=huggingface\" alt=\"HuggingFace\" loading=\"lazy\" decoding=\"async\" /> <img src=\"https://img.shields.io/badge/Groq-Llama_3-3B82F6\" alt=\"Groq\" loading=\"lazy\" decoding=\"async\" /></td>\n</tr>\n<tr>\n<td><strong>UI</strong></td>\n<td>Tailwind CSS v4, shadcn/ui, Framer Motion, Recharts, ReactFlow</td>\n<td><img src=\"https://img.shields.io/badge/Tailwind-v4-06B6D4?logo=tailwindcss\" alt=\"Tailwind\" loading=\"lazy\" decoding=\"async\" /></td>\n</tr>\n<tr>\n<td><strong>Forms</strong></td>\n<td>React Hook Form + Zod</td>\n<td></td>\n</tr>\n<tr>\n<td><strong>Scheduler</strong></td>\n<td>APScheduler (AsyncIOScheduler)</td>\n<td></td>\n</tr>\n<tr>\n<td><strong>Testing</strong></td>\n<td>Pytest, Playwright, Locust</td>\n<td><img src=\"https://img.shields.io/badge/Pytest-8.x-0A9EDC?logo=pytest\" alt=\"Pytest\" loading=\"lazy\" decoding=\"async\" /> <img src=\"https://img.shields.io/badge/Playwright-E2E-45BA4B?logo=playwright\" alt=\"Playwright\" loading=\"lazy\" decoding=\"async\" /></td>\n</tr>\n<tr>\n<td><strong>CI/CD</strong></td>\n<td>GitHub Actions</td>\n<td><img src=\"https://img.shields.io/badge/GitHub_Actions-CI-2088FF?logo=githubactions\" alt=\"GitHub Actions\" loading=\"lazy\" decoding=\"async\" /></td>\n</tr>\n<tr>\n<td><strong>Containerization</strong></td>\n<td>Docker + Docker Compose</td>\n<td><img src=\"https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker\" alt=\"Docker\" loading=\"lazy\" decoding=\"async\" /></td>\n</tr>\n</tbody></table></div>\n<hr />\n<h3 id=\"readme-api-endpoints\">API Endpoints<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-api-endpoints\">#</a></h3>\n<h4 id=\"readme-auth-auth\">Auth (<code>/auth</code>)<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-auth-auth\">#</a></h4>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th>Method</th>\n<th>Endpoint</th>\n<th>Auth</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>POST</code></td>\n<td><code>/auth/register</code></td>\n<td>No</td>\n</tr>\n<tr>\n<td><code>POST</code></td>\n<td><code>/auth/login</code></td>\n<td>No</td>\n</tr>\n<tr>\n<td><code>POST</code></td>\n<td><code>/auth/google</code></td>\n<td>No</td>\n</tr>\n<tr>\n<td><code>POST</code></td>\n<td><code>/auth/profile</code></td>\n<td>Yes</td>\n</tr>\n<tr>\n<td><code>GET</code></td>\n<td><code>/auth/me</code></td>\n<td>Yes</td>\n</tr>\n</tbody></table></div>\n<h4 id=\"readme-resume-resume\">Resume (<code>/resume</code>)<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-resume-resume\">#</a></h4>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th>Method</th>\n<th>Endpoint</th>\n<th>Auth</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>POST</code></td>\n<td><code>/resume/upload</code></td>\n<td>Yes</td>\n</tr>\n<tr>\n<td><code>GET</code></td>\n<td><code>/resume/me</code></td>\n<td>Yes</td>\n</tr>\n</tbody></table></div>\n<h4 id=\"readme-jobs-jobs\">Jobs (<code>/jobs</code>)<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-jobs-jobs\">#</a></h4>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th>Method</th>\n<th>Endpoint</th>\n<th>Auth</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>GET</code></td>\n<td><code>/jobs/search</code></td>\n<td>Yes</td>\n</tr>\n<tr>\n<td><code>GET</code></td>\n<td><code>/jobs/{job_id}</code></td>\n<td>Yes</td>\n</tr>\n</tbody></table></div>\n<h4 id=\"readme-salary-salary\">Salary (<code>/salary</code>)<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-salary-salary\">#</a></h4>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th>Method</th>\n<th>Endpoint</th>\n<th>Auth</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>GET</code></td>\n<td><code>/salary/insights</code></td>\n<td>Yes</td>\n</tr>\n</tbody></table></div>\n<h4 id=\"readme-career-career\">Career (<code>/career</code>)<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-career-career\">#</a></h4>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th>Method</th>\n<th>Endpoint</th>\n<th>Auth</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>POST</code></td>\n<td><code>/career/generate</code></td>\n<td>Yes</td>\n</tr>\n<tr>\n<td><code>GET</code></td>\n<td><code>/career/me</code></td>\n<td>Yes</td>\n</tr>\n<tr>\n<td><code>GET</code></td>\n<td><code>/career/history</code></td>\n<td>Yes</td>\n</tr>\n<tr>\n<td><code>POST</code></td>\n<td><code>/career/generate-bio</code></td>\n<td>Yes</td>\n</tr>\n<tr>\n<td><code>POST</code></td>\n<td><code>/career/{roadmap_id}/archive</code></td>\n<td>Yes</td>\n</tr>\n<tr>\n<td><code>PATCH</code></td>\n<td><code>/career/task/{task_id}</code></td>\n<td>Yes</td>\n</tr>\n<tr>\n<td><code>DELETE</code></td>\n<td><code>/career/{roadmap_id}</code></td>\n<td>Yes</td>\n</tr>\n</tbody></table></div>\n<h4 id=\"readme-chat-chat\">Chat (<code>/chat</code>)<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-chat-chat\">#</a></h4>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th>Method</th>\n<th>Endpoint</th>\n<th>Auth</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>POST</code></td>\n<td><code>/chat/assistant</code></td>\n<td>Yes</td>\n</tr>\n<tr>\n<td><code>GET</code></td>\n<td><code>/chat/history</code></td>\n<td>Yes</td>\n</tr>\n</tbody></table></div>\n<h4 id=\"readme-applications-applications\">Applications (<code>/applications</code>)<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-applications-applications\">#</a></h4>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th>Method</th>\n<th>Endpoint</th>\n<th>Auth</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>GET</code></td>\n<td><code>/applications/</code></td>\n<td>Yes</td>\n</tr>\n<tr>\n<td><code>POST</code></td>\n<td><code>/applications/</code></td>\n<td>Yes</td>\n</tr>\n<tr>\n<td><code>PUT</code></td>\n<td><code>/applications/{app_id}/status</code></td>\n<td>Yes</td>\n</tr>\n<tr>\n<td><code>DELETE</code></td>\n<td><code>/applications/{app_id}</code></td>\n<td>Yes</td>\n</tr>\n</tbody></table></div>\n<h4 id=\"readme-notifications-notifications\">Notifications (<code>/notifications</code>)<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-notifications-notifications\">#</a></h4>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th>Method</th>\n<th>Endpoint</th>\n<th>Auth</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>GET</code></td>\n<td><code>/notifications/</code></td>\n<td>Yes</td>\n</tr>\n<tr>\n<td><code>GET</code></td>\n<td><code>/notifications/unread-count</code></td>\n<td>Yes</td>\n</tr>\n<tr>\n<td><code>PATCH</code></td>\n<td><code>/notifications/{notification_id}/read</code></td>\n<td>Yes</td>\n</tr>\n<tr>\n<td><code>PATCH</code></td>\n<td><code>/notifications/read-all</code></td>\n<td>Yes</td>\n</tr>\n<tr>\n<td><code>DELETE</code></td>\n<td><code>/notifications/{notification_id}</code></td>\n<td>Yes</td>\n</tr>\n</tbody></table></div>\n<h4 id=\"readme-settings-settings\">Settings (<code>/settings</code>)<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-settings-settings\">#</a></h4>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th>Method</th>\n<th>Endpoint</th>\n<th>Auth</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>PUT</code></td>\n<td><code>/settings/profile</code></td>\n<td>Yes</td>\n</tr>\n<tr>\n<td><code>POST</code></td>\n<td><code>/settings/password</code></td>\n<td>Yes</td>\n</tr>\n<tr>\n<td><code>DELETE</code></td>\n<td><code>/settings/account</code></td>\n<td>Yes</td>\n</tr>\n</tbody></table></div>\n<h4 id=\"readme-health\">Health<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-health\">#</a></h4>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th>Method</th>\n<th>Endpoint</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>GET</code></td>\n<td><code>/</code></td>\n</tr>\n<tr>\n<td><code>GET</code></td>\n<td><code>/health</code></td>\n</tr>\n</tbody></table></div>\n<hr />\n<h3 id=\"readme-required-environment-variables\">Required Environment Variables<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-required-environment-variables\">#</a></h3>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th>Variable</th>\n<th>Required</th>\n<th>Purpose</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>MONGODB_URL</code></td>\n<td>Yes</td>\n<td>MongoDB connection string</td>\n</tr>\n<tr>\n<td><code>JWT_SECRET_KEY</code></td>\n<td>Yes</td>\n<td>JWT signing secret</td>\n</tr>\n<tr>\n<td><code>JSEARCH_API_KEY</code></td>\n<td>Yes</td>\n<td>RapidAPI JSearch key</td>\n</tr>\n<tr>\n<td><code>ADZUNA_APP_ID</code></td>\n<td>Yes</td>\n<td>Adzuna App ID</td>\n</tr>\n<tr>\n<td><code>ADZUNA_APP_KEY</code></td>\n<td>Yes</td>\n<td>Adzuna App Key</td>\n</tr>\n<tr>\n<td><code>GROQ_API_KEY</code></td>\n<td>Yes</td>\n<td>Groq API key</td>\n</tr>\n<tr>\n<td><code>GOOGLE_CLIENT_ID</code></td>\n<td>For Google login</td>\n<td>Google OAuth client ID</td>\n</tr>\n</tbody></table></div>\n<hr />\n<h3 id=\"readme-getting-started\">Getting Started<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-getting-started\">#</a></h3>\n<h4 id=\"readme-prerequisites\">Prerequisites<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-prerequisites\">#</a></h4>\n<ul>\n<li>Python 3.11+</li>\n<li>Node.js 18+</li>\n<li>MongoDB (local or Atlas)</li>\n<li>API keys (see above)</li>\n</ul>\n<h4 id=\"readme-backend\">Backend<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-backend\">#</a></h4>\n<pre><code class=\"hljs language-bash\">python -m venv venv\nvenv\\Scripts\\activate       <span class=\"hljs-comment\"># Windows</span>\n<span class=\"hljs-comment\"># source venv/bin/activate  # Linux/Mac</span>\n\npip install -r requirements.txt\n<span class=\"hljs-built_in\">cp</span> .env.example .<span class=\"hljs-built_in\">env</span>        <span class=\"hljs-comment\"># Edit with your keys</span>\nuvicorn app.main:app --reload\n</code></pre>\n<h4 id=\"readme-frontend\">Frontend<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-frontend\">#</a></h4>\n<pre><code class=\"hljs language-bash\"><span class=\"hljs-built_in\">cd</span> frontend\nnpm install\n<span class=\"hljs-built_in\">cp</span> .env.example .env.local\nnpm run dev\n</code></pre>\n<h4 id=\"readme-docker-both-services\">Docker (both services)<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-docker-both-services\">#</a></h4>\n<pre><code class=\"hljs language-bash\">docker-compose up --build\n</code></pre>\n<hr />\n<h3 id=\"readme-testing\">Testing<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-testing\">#</a></h3>\n<pre><code class=\"hljs language-bash\"><span class=\"hljs-comment\"># Backend unit tests</span>\npython -m pytest tests/unit/\n\n<span class=\"hljs-comment\"># Frontend e2e (Playwright)</span>\n<span class=\"hljs-built_in\">cd</span> frontend &amp;&amp; npx playwright <span class=\"hljs-built_in\">test</span>\n\n<span class=\"hljs-comment\"># Load testing</span>\nlocust -f locustfile.py\n</code></pre>\n<hr />\n<h3 id=\"readme-deployment\">Deployment<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-deployment\">#</a></h3>\n<p><strong>Yes, this project is deployable out of the box.</strong> It includes:</p>\n<ul>\n<li><strong>Docker Compose</strong> — One command to start both services</li>\n<li><strong>Dockerfiles</strong> — Python 3.11-slim (backend) + Node multi-stage (frontend)</li>\n<li><strong>GitHub Actions CI</strong> — Unit tests on push/PR</li>\n<li><strong>Environment config</strong> — All secrets via <code>.env</code></li>\n</ul>\n<h4 id=\"readme-deployment-options\">Deployment Options<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-deployment-options\">#</a></h4>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th>Platform</th>\n<th>Backend</th>\n<th>Frontend</th>\n<th>Database</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Render</strong></td>\n<td>FastAPI (Docker)</td>\n<td>--</td>\n<td>MongoDB Atlas</td>\n</tr>\n<tr>\n<td><strong>Vercel</strong></td>\n<td>--</td>\n<td>Next.js</td>\n<td>MongoDB Atlas</td>\n</tr>\n</tbody></table></div>\n<h4 id=\"readme-production-checklist\">Production Checklist<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-production-checklist\">#</a></h4>\n<ul>\n<li><input disabled=\"disabled\" type=\"checkbox\" /> Set <code>DEBUG=False</code> in <code>.env</code></li>\n<li><input disabled=\"disabled\" type=\"checkbox\" /> Use production MongoDB Atlas instance</li>\n<li><input disabled=\"disabled\" type=\"checkbox\" /> Generate strong <code>JWT_SECRET_KEY</code></li>\n<li><input disabled=\"disabled\" type=\"checkbox\" /> Configure CORS for your domain</li>\n<li><input disabled=\"disabled\" type=\"checkbox\" /> Set up reverse proxy (Nginx/Caddy) with SSL</li>\n<li><input disabled=\"disabled\" type=\"checkbox\" /> Add logging &amp; monitoring</li>\n</ul>\n<hr />\n<h3 id=\"readme-security\">Security<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-security\">#</a></h3>\n<ul>\n<li>Passwords hashed with bcrypt</li>\n<li>JWT tokens for stateless authentication</li>\n<li>CORS configurable for production domains</li>\n<li>All secrets managed via environment variables</li>\n<li>Google OAuth for optional SSO</li>\n</ul>\n<hr />\n<h3 id=\"readme-license--copyright\">License &amp; Copyright<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-license--copyright\">#</a></h3>\n<p><strong>Copyright (c) 2026 SAISRIRAM VANAMA. All rights reserved.</strong></p>\n<p>This project is licensed under the <strong>MIT License</strong> -- see the <a href=\"https://github.com/SaiSriRam-Vanama/ai-career-autopilot/blob/main/LICENSE\" target=\"_blank\" rel=\"noopener noreferrer\">LICENSE</a> file for details.</p>\n<hr />\n<h3 id=\"readme-connect--support\">Connect &amp; Support<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-connect--support\">#</a></h3>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Author</strong></td>\n<td><strong>SAISRIRAM VANAMA</strong></td>\n</tr>\n<tr>\n<td><strong>Email</strong></td>\n<td><a href=\"mailto:saisriram2796@gmail.com\">saisriram2796@gmail.com</a></td>\n</tr>\n<tr>\n<td><strong>LinkedIn</strong></td>\n<td><a href=\"https://linkedin.com/in/saisriramv\" target=\"_blank\" rel=\"noopener noreferrer\">linkedin.com/in/saisriramv</a></td>\n</tr>\n<tr>\n<td><strong>GitHub</strong></td>\n<td><a href=\"https://github.com/SaiSriRam-Vanama\" target=\"_blank\" rel=\"noopener noreferrer\">SaiSriRam-Vanama</a></td>\n</tr>\n</tbody></table></div>\n<hr />\n<blockquote>\n<p><strong>If you found this project useful, consider giving it a star on GitHub!</strong></p>\n<p><em>Built for career growth and AI-powered guidance</em></p>\n</blockquote>\n"
+}

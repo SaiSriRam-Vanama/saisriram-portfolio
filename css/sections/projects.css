@@ -1,0 +1,232 @@
+/* ==========================================================================
+   Projects - featured card, project grid, screenshots, live pills, tags and footer
+   ========================================================================== */
+
+/* Grid and card shell */
+.pg {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 28px;
+}
+
+.mp {
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.pc {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.fe {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+/* Screenshot area */
+.th {
+  position: relative;
+  aspect-ratio: 16/10;
+  background: var(--alt);
+  border-bottom: 1.5px solid var(--ink);
+  overflow: hidden;
+}
+
+.fe .th {
+  aspect-ratio: auto;
+  min-height: 100%;
+  border: 0;
+  border-left: 1.5px solid var(--ink);
+  order: 2;
+}
+
+.th img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.fe .th img {
+  object-position: left top;
+}
+
+.mk {
+  position: absolute;
+  inset: 22px 22px 0;
+  background: #15171C;
+  border-radius: 10px 10px 0 0;
+  padding: 38px 20px;
+}
+
+.mk::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 18px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2A2E37;
+  box-shadow: 14px 0 #2A2E37,28px 0 #2A2E37;
+}
+
+.mk i {
+  display: block;
+  height: 12px;
+  border-radius: 6px;
+  background: #2A2E37;
+  margin-bottom: 12px;
+  width: var(--w);
+}
+
+.mk i:first-child {
+  background: #8FA8FF;
+  width: 38%;
+}
+
+/* Live / Open demo pills */
+.pl {
+  position: absolute;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 32px;
+  padding: 0 13px;
+  border-radius: 999px;
+  background: var(--sf);
+  border: 1.5px solid var(--ink);
+  font: 500 13px var(--sans);
+  color: var(--ink);
+}
+
+.pl.a {
+  top: 14px;
+  left: 14px;
+}
+
+.pl.b {
+  bottom: 14px;
+  right: 14px;
+  transition: .15s;
+}
+
+.pl.b:hover {
+  background: var(--ac);
+  border-color: var(--ac);
+  color: var(--oa);
+}
+
+.pl.b span {
+  transition: transform .2s;
+}
+
+.pl.b:hover span {
+  transform: translate(2px,-2px);
+}
+
+/* Card body */
+.bd {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 26px;
+  gap: 12px;
+}
+
+.fe .bd {
+  padding: 28px;
+  gap: 10px;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pc h3 {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.sb {
+  margin: -2px 0 0;
+  font: 500 12px/1.4 var(--mono);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--mu);
+}
+
+.fe h3 {
+  font-size: 1.9rem;
+}
+
+.ds {
+  color: var(--mu);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 3.2em;
+}
+
+.fe .ds {
+  -webkit-line-clamp: 3;
+}
+
+.tgs {
+  display: flex;
+  gap: 6px;
+  overflow: hidden;
+}
+
+.tgs span {
+  font: 500 12px var(--mono);
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: var(--so);
+  color: var(--ac);
+  white-space: nowrap;
+}
+
+.ft {
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid var(--ln);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ft > a.bg.sm {
+  flex: 1 1 0;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.cs {
+  display: inline-flex;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--ac);
+}
+
+.cs span {
+  transition: transform .2s;
+}
+
+.cs:hover span {
+  transform: translateX(4px);
+}

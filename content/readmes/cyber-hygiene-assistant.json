@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "slug": "cyber-hygiene-assistant",
+  "status": "ok",
+  "repo": {
+    "owner": "SaiSriRam-Vanama",
+    "name": "Cyber-Hygiene-Assistant",
+    "url": "https://github.com/SaiSriRam-Vanama/Cyber-Hygiene-Assistant"
+  },
+  "readme": {
+    "path": "README.md",
+    "htmlUrl": "https://github.com/SaiSriRam-Vanama/Cyber-Hygiene-Assistant/blob/main/README.md",
+    "branch": "main",
+    "sha": "a8f6ffd0bc31cc7efe9306db3f9c62f7d7faef94",
+    "etag": "W/\"a8f6ffd0bc31cc7efe9306db3f9c62f7d7faef94\"",
+    "via": "api",
+    "fetchedAt": "2026-11-12T11:18:35.869Z",
+    "bytes": 9418
+  },
+  "title": "Cyber Hygiene Assistant",
+  "description": "An AI-powered personal cyber-safety web application built with Flask and scikit-learn. It evaluates password strength, detects phishing URLs and emails,…",
+  "droppedTitle": false,
+  "headings": [
+    {
+      "id": "readme-cyber-hygiene-assistant",
+      "text": "Cyber Hygiene Assistant",
+      "level": 1
+    },
+    {
+      "id": "readme-features",
+      "text": "Features",
+      "level": 2
+    },
+    {
+      "id": "readme-core-scoring-engine",
+      "text": "Core Scoring Engine",
+      "level": 3
+    },
+    {
+      "id": "readme-password-security",
+      "text": "Password Security",
+      "level": 3
+    },
+    {
+      "id": "readme-phishing-detection",
+      "text": "Phishing Detection",
+      "level": 3
+    },
+    {
+      "id": "readme-advanced-security",
+      "text": "Advanced Security",
+      "level": 3
+    },
+    {
+      "id": "readme-batch-analysis",
+      "text": "Batch Analysis",
+      "level": 3
+    },
+    {
+      "id": "readme-encrypted-credential-store",
+      "text": "Encrypted Credential Store",
+      "level": 3
+    },
+    {
+      "id": "readme-web-ui",
+      "text": "Web UI",
+      "level": 3
+    },
+    {
+      "id": "readme-extras-module",
+      "text": "Extras Module",
+      "level": 3
+    },
+    {
+      "id": "readme-project-structure",
+      "text": "Project Structure",
+      "level": 2
+    },
+    {
+      "id": "readme-tech-stack",
+      "text": "Tech Stack",
+      "level": 2
+    },
+    {
+      "id": "readme-quick-start-windows-powershell",
+      "text": "Quick Start (Windows PowerShell)",
+      "level": 2
+    },
+    {
+      "id": "readme-run-tests",
+      "text": "Run Tests",
+      "level": 2
+    },
+    {
+      "id": "readme-rebuild-ml-models",
+      "text": "Rebuild ML Models",
+      "level": 2
+    },
+    {
+      "id": "readme-environment-variables",
+      "text": "Environment Variables",
+      "level": 2
+    },
+    {
+      "id": "readme-configuration",
+      "text": "Configuration",
+      "level": 2
+    },
+    {
+      "id": "readme-license",
+      "text": "License",
+      "level": 2
+    },
+    {
+      "id": "readme-author",
+      "text": "Author",
+      "level": 2
+    }
+  ],
+  "hasDiagrams": false,
+  "stats": {
+    "codeBlocks": 6,
+    "diagrams": 0,
+    "tables": 2,
+    "taskItems": 0,
+    "images": 0,
+    "words": 1201,
+    "links": 2,
+    "headings": 19
+  },
+  "verifiedTags": [
+    "Python",
+    "Flask",
+    "scikit-learn",
+    "Pandas",
+    "NumPy",
+    "Cryptography"
+  ],
+  "unverifiedTags": [],
+  "stale": false,
+  "html": "<h2 id=\"readme-cyber-hygiene-assistant\">Cyber Hygiene Assistant<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-cyber-hygiene-assistant\">#</a></h2>\n<p>An AI-powered personal cyber-safety web application built with Flask and scikit-learn. It evaluates password strength, detects phishing URLs and emails, performs batch file analysis, provides encrypted credential storage, and offers advanced security diagnostics.</p>\n<hr />\n<h3 id=\"readme-features\">Features<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-features\">#</a></h3>\n<h4 id=\"readme-core-scoring-engine\">Core Scoring Engine<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-core-scoring-engine\">#</a></h4>\n<ul>\n<li>Adaptive cyber hygiene scoring (0-100) combining password strength, URL phishing risk, and email phishing risk</li>\n<li>Fake/Real verdicts with per-component breakdown and recommendations</li>\n<li>ML confidence delta and adaptive penalty based on historical weakness profile</li>\n</ul>\n<h4 id=\"readme-password-security\">Password Security<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-password-security\">#</a></h4>\n<ul>\n<li>Rule-based password strength evaluation (length, character diversity, RockYou dataset check)</li>\n<li>ML-powered password classification via LogisticRegression on character n-gram TF-IDF features</li>\n<li>Password breach check via HaveIBeenPwned API (k-anonymity model)</li>\n<li>Cryptographically secure password generator</li>\n</ul>\n<h4 id=\"readme-phishing-detection\">Phishing Detection<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-phishing-detection\">#</a></h4>\n<ul>\n<li>URL phishing risk scoring (HTTP indicators, special characters, brand lookalikes via difflib, punycode, IP addresses)</li>\n<li>Google Safe Browsing API integration for URL reputation</li>\n<li>Email phishing detection via keyword scoring + LogisticRegression TF-IDF model</li>\n<li>Short-link expansion and destination risk assessment (bit.ly, tinyurl, etc.)</li>\n<li>QR phishing (quishing) scan from uploaded images</li>\n</ul>\n<h4 id=\"readme-advanced-security\">Advanced Security<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-advanced-security\">#</a></h4>\n<ul>\n<li>Social media takeover risk audit (password strength, MFA status, credential reuse, breach exposure)</li>\n<li>Scam playbook classification (lottery, job scam, refund, tech support, romance, crypto giveaway)</li>\n<li>Brand impersonation detection (claimed brand vs sender domain mismatch)</li>\n<li>Payment fraud risk mode (UPI, bank, wallet, account-change request analysis)</li>\n<li>OTP/2FA scam detector for social-engineering messages</li>\n<li>Attachment risk classifier (executables, macro-enabled documents, scripts)</li>\n<li>Incident response one-click playbook (phishing, payment fraud, social takeover)</li>\n</ul>\n<h4 id=\"readme-batch-analysis\">Batch Analysis<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-batch-analysis\">#</a></h4>\n<ul>\n<li>Process CSV, XLSX, TSV, TXT, EML, and ZIP files</li>\n<li>Auto-detect password/email/URL columns by header matching</li>\n<li>Enrich with ML predictions, breach checks, and phishing scores</li>\n</ul>\n<h4 id=\"readme-encrypted-credential-store\">Encrypted Credential Store<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-encrypted-credential-store\">#</a></h4>\n<ul>\n<li>Fernet symmetric encryption with PBKDF2 key derivation (390,000 iterations, SHA-256)</li>\n<li>Master passphrase-protected create, read, delete, export, and import operations</li>\n</ul>\n<h4 id=\"readme-web-ui\">Web UI<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-web-ui\">#</a></h4>\n<ul>\n<li>Single-page cyberpunk-themed interface with tabbed navigation</li>\n<li>Interactive password strength meter with real-time client-side evaluation</li>\n<li>Matrix rain canvas animation</li>\n<li>Responsive design for desktop and mobile</li>\n</ul>\n<h4 id=\"readme-extras-module\">Extras Module<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-extras-module\">#</a></h4>\n<ul>\n<li>Qt-based desktop dashboard with matplotlib pie charts and weekly heatmaps</li>\n<li>Continuous learning pipeline that retrains ML models on new scoring data</li>\n<li>Personalized security tips based on user weakness history</li>\n<li>Excel export with embedded charts</li>\n</ul>\n<hr />\n<h3 id=\"readme-project-structure\">Project Structure<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-project-structure\">#</a></h3>\n<pre><code class=\"hljs\">cyber-hygiene-assistant/\n|\n|-- MAIN.PY                     # Application entry point (auto-selects port, starts Flask)\n|-- backend.py                  # Core engine: scoring, ML models, security features\n|-- webapp.py                   # Flask routes and request handlers\n|-- extras.py                   # Qt dashboard, Excel export, continuous learning, tips\n|-- utils.py                    # Utility functions (placeholder)\n|-- requirements.txt            # Python dependencies\n|-- README.md                   # This file\n|-- RUN_COMMANDS.md             # Setup/run/test/rebuild command reference\n|\n|-- templates/\n|   |-- index.html              # Single-page web UI (Jinja2 template)\n|\n|-- static/\n|   |-- site.css                # Cyberpunk-themed stylesheet\n|   |-- app.js                  # Client-side JavaScript (Matrix rain, password meter, generator)\n|\n|-- models/                     # Trained ML model artifacts (joblib format)\n|   |-- pw_model.joblib         # Password strength classifier\n|   |-- pw_vect.joblib          # Password TF-IDF vectorizer\n|   |-- email_model.joblib      # Email phishing classifier\n|   |-- email_vect.joblib       # Email TF-IDF vectorizer\n|   |-- arff_model.joblib       # Hygiene risk classifier\n|\n|-- data/                       # Training datasets\n|   |-- emails.csv              # Enron email corpus\n|\n|-- cybee/                      # Training datasets directory\n|   |-- rockyou.txt             # RockYou password leak dataset\n|   |-- emails.csv              # Labeled phishing/safe email dataset\n|\n|-- results/                    # Runtime data and exports\n|   |-- app_config.json         # User-configurable security policy settings\n|   |-- score_history.json      # JSON log of scoring runs\n|   |-- score_history.csv       # CSV export of score history\n|   |-- score_history.xlsx      # Excel export of score history\n|   |-- batch_results.csv       # Example batch analysis output\n|   |-- profile.json            # User weakness profile\n|   |-- credentials.enc         # Encrypted credential store\n|   |-- creds_salt.bin          # Salt for credential encryption\n|\n|-- tests/                      # Unit and integration tests\n|   |-- test_backend.py         # Tests for backend scoring, ML, breach check\n|   |-- test_webapp_routes.py   # Smoke tests for Flask routes\n|   |-- test_url_detection.py   # Tests for phishing URL detection\n|\n|-- Doc/                        # Documentation\n|   |-- SEMINAR_Report_2.docx   # Seminar/college project report\n</code></pre>\n<hr />\n<h3 id=\"readme-tech-stack\">Tech Stack<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-tech-stack\">#</a></h3>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th>Layer</th>\n<th>Technology</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Language</td>\n<td>Python 3.11</td>\n</tr>\n<tr>\n<td>Web Framework</td>\n<td>Flask 3.0+</td>\n</tr>\n<tr>\n<td>ML/AI</td>\n<td>scikit-learn (LogisticRegression, RandomForest, TF-IDF)</td>\n</tr>\n<tr>\n<td>Data</td>\n<td>pandas, numpy, joblib</td>\n</tr>\n<tr>\n<td>Cryptography</td>\n<td>cryptography (Fernet + PBKDF2)</td>\n</tr>\n<tr>\n<td>Desktop UI</td>\n<td>PyQt5, matplotlib</td>\n</tr>\n<tr>\n<td>Frontend</td>\n<td>HTML, CSS, JavaScript (vanilla)</td>\n</tr>\n<tr>\n<td>Testing</td>\n<td>Python unittest</td>\n</tr>\n<tr>\n<td>External APIs</td>\n<td>HaveIBeenPwned, Google Safe Browsing, LeakCheck</td>\n</tr>\n</tbody></table></div>\n<hr />\n<h3 id=\"readme-quick-start-windows-powershell\">Quick Start (Windows PowerShell)<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-quick-start-windows-powershell\">#</a></h3>\n<pre><code class=\"hljs language-powershell\"><span class=\"hljs-comment\"># 1. Create and activate virtual environment</span>\npython <span class=\"hljs-literal\">-m</span> venv env\n.\\env\\Scripts\\Activate.ps1\n\n<span class=\"hljs-comment\"># 2. Install dependencies</span>\npip install <span class=\"hljs-literal\">-r</span> requirements.txt\n\n<span class=\"hljs-comment\"># 3. Run the application</span>\npython MAIN.PY\n</code></pre>\n<p>Then open your browser to:</p>\n<pre><code class=\"hljs\">http://127.0.0.1:5000\n</code></pre>\n<p>If port 5000 is in use, the application automatically selects the next available port and prints the URL to the console.</p>\n<hr />\n<h3 id=\"readme-run-tests\">Run Tests<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-run-tests\">#</a></h3>\n<pre><code class=\"hljs language-powershell\"><span class=\"hljs-comment\"># Run all tests</span>\n.\\env\\Scripts\\python.exe <span class=\"hljs-literal\">-m</span> unittest discover <span class=\"hljs-literal\">-s</span> tests <span class=\"hljs-literal\">-p</span> <span class=\"hljs-string\">\"test_*.py\"</span>\n\n<span class=\"hljs-comment\"># Run individual test files</span>\n.\\env\\Scripts\\python.exe <span class=\"hljs-literal\">-m</span> unittest tests.test_backend <span class=\"hljs-literal\">-v</span>\n.\\env\\Scripts\\python.exe <span class=\"hljs-literal\">-m</span> unittest tests.test_webapp_routes <span class=\"hljs-literal\">-v</span>\n.\\env\\Scripts\\python.exe <span class=\"hljs-literal\">-m</span> unittest tests.test_url_detection <span class=\"hljs-literal\">-v</span>\n</code></pre>\n<hr />\n<h3 id=\"readme-rebuild-ml-models\">Rebuild ML Models<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-rebuild-ml-models\">#</a></h3>\n<pre><code class=\"hljs language-powershell\"><span class=\"hljs-comment\"># From command line:</span>\n.\\env\\Scripts\\python.exe <span class=\"hljs-literal\">-c</span> <span class=\"hljs-string\">\"import backend; print(backend.rebuild_all_models())\"</span>\n</code></pre>\n<p>Or from the web UI: navigate to the Model Ops panel and click \"Rebuild Models.\"</p>\n<hr />\n<h3 id=\"readme-environment-variables\">Environment Variables<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-environment-variables\">#</a></h3>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th>Variable</th>\n<th>Purpose</th>\n<th>Default</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>HIBP_API_KEY</code></td>\n<td>HaveIBeenPwned API key for breach checks</td>\n<td>(offline mode)</td>\n</tr>\n<tr>\n<td><code>SAFE_BROWSING_API_KEY</code></td>\n<td>Google Safe Browsing API key for URL checks</td>\n<td>(local heuristics)</td>\n</tr>\n<tr>\n<td><code>LEAKCHECK_API_KEY</code></td>\n<td>LeakCheck API key for dark-web exposure</td>\n<td>(falls back to HIBP)</td>\n</tr>\n<tr>\n<td><code>PORT</code></td>\n<td>Preferred web server port</td>\n<td><code>5000</code></td>\n</tr>\n<tr>\n<td><code>CYBER_SKIP_MODEL_PRELOAD</code></td>\n<td>Set to <code>1</code> to skip model preload</td>\n<td><code>0</code></td>\n</tr>\n<tr>\n<td><code>CYBER_FAST_TEST</code></td>\n<td>Set to <code>1</code> for faster tests</td>\n<td><code>0</code></td>\n</tr>\n<tr>\n<td><code>CYBER_WEB_SECRET</code></td>\n<td>Flask secret key</td>\n<td><code>cyber-hygiene-secret</code></td>\n</tr>\n</tbody></table></div>\n<hr />\n<h3 id=\"readme-configuration\">Configuration<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-configuration\">#</a></h3>\n<p>The file <code>results/app_config.json</code> allows configuring security policy thresholds:</p>\n<pre><code class=\"hljs language-json\"><span class=\"hljs-punctuation\">{</span>\n  <span class=\"hljs-attr\">\"min_password_length\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-number\">12</span><span class=\"hljs-punctuation\">,</span>\n  <span class=\"hljs-attr\">\"require_mfa\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-literal\"><span class=\"hljs-keyword\">false</span></span><span class=\"hljs-punctuation\">,</span>\n  <span class=\"hljs-attr\">\"url_min_score\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-number\">20</span><span class=\"hljs-punctuation\">,</span>\n  <span class=\"hljs-attr\">\"email_min_score\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-number\">20</span>\n<span class=\"hljs-punctuation\">}</span>\n</code></pre>\n<p>Modify via <code>backend.policy_edit()</code> or edit the JSON file directly.</p>\n<hr />\n<h3 id=\"readme-license\">License<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-license\">#</a></h3>\n<p>MIT License</p>\n<p>Copyright (c) 2025 Sai Sri Ram Vanama</p>\n<p>Permission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:</p>\n<p>The above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.</p>\n<p>THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.</p>\n<hr />\n<h3 id=\"readme-author\">Author<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-author\">#</a></h3>\n<p><strong>Sai Sri Ram Vanama</strong></p>\n<ul>\n<li>GitHub: <a href=\"https://github.com/SaiSriRam-Vanama/Cyber-Hygiene-Assistant\" target=\"_blank\" rel=\"noopener noreferrer\">SaiSriRam-Vanama</a></li>\n<li>LinkedIn: <a href=\"https://www.linkedin.com/in/Saisriramv\" target=\"_blank\" rel=\"noopener noreferrer\">Saisriramv</a></li>\n</ul>\n"
+}

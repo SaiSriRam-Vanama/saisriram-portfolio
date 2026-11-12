@@ -1,0 +1,455 @@
+{
+  "schema": 1,
+  "slug": "pulselens-ai",
+  "status": "ok",
+  "repo": {
+    "owner": "SaiSriRam-Vanama",
+    "name": "PulselensAi",
+    "url": "https://github.com/SaiSriRam-Vanama/PulselensAi"
+  },
+  "readme": {
+    "path": "README.md",
+    "htmlUrl": "https://github.com/SaiSriRam-Vanama/PulselensAi/blob/main/README.md",
+    "branch": "main",
+    "sha": "9f953f9d7f78ade2ad516026aae7a46e38e89435",
+    "etag": "W/\"9f953f9d7f78ade2ad516026aae7a46e38e89435\"",
+    "via": "api",
+    "fetchedAt": "2026-11-12T11:18:34.775Z",
+    "bytes": 18276
+  },
+  "title": null,
+  "description": "PulselensAI is an AI-driven early failure detection system designed for online startups. It combines three independent intelligence layers.",
+  "droppedTitle": true,
+  "headings": [
+    {
+      "id": "readme-early-failure-detection-system-for-online-startups-using-hybrid-multi-signal-intelligence",
+      "text": "Early Failure Detection System for Online Startups Using Hybrid Multi-Signal Intelligence",
+      "level": 2
+    },
+    {
+      "id": "readme-table-of-contents",
+      "text": "Table of Contents",
+      "level": 2
+    },
+    {
+      "id": "readme-overview",
+      "text": "Overview",
+      "level": 2
+    },
+    {
+      "id": "readme-problem-it-solves",
+      "text": "Problem It Solves",
+      "level": 3
+    },
+    {
+      "id": "readme-features",
+      "text": "Features",
+      "level": 2
+    },
+    {
+      "id": "readme-core-capabilities",
+      "text": "Core Capabilities",
+      "level": 3
+    },
+    {
+      "id": "readme-phase-architecture",
+      "text": "Phase Architecture",
+      "level": 3
+    },
+    {
+      "id": "readme-architecture",
+      "text": "Architecture",
+      "level": 2
+    },
+    {
+      "id": "readme-system-requirements",
+      "text": "System Requirements",
+      "level": 2
+    },
+    {
+      "id": "readme-minimum-requirements",
+      "text": "Minimum Requirements",
+      "level": 3
+    },
+    {
+      "id": "readme-recommended-setup",
+      "text": "Recommended Setup",
+      "level": 3
+    },
+    {
+      "id": "readme-installation",
+      "text": "Installation",
+      "level": 2
+    },
+    {
+      "id": "readme-option-1-automated-installation-windows",
+      "text": "Option 1: Automated Installation (Windows)",
+      "level": 3
+    },
+    {
+      "id": "readme-option-2-manual-installation",
+      "text": "Option 2: Manual Installation",
+      "level": 3
+    },
+    {
+      "id": "readme-step-1-clone-repository",
+      "text": "Step 1: Clone Repository",
+      "level": 4
+    },
+    {
+      "id": "readme-step-2-create-virtual-environment",
+      "text": "Step 2: Create Virtual Environment",
+      "level": 4
+    },
+    {
+      "id": "readme-step-3-install-dependencies",
+      "text": "Step 3: Install Dependencies",
+      "level": 4
+    },
+    {
+      "id": "readme-step-4-run-application",
+      "text": "Step 4: Run Application",
+      "level": 4
+    },
+    {
+      "id": "readme-quick-start",
+      "text": "Quick Start",
+      "level": 2
+    },
+    {
+      "id": "readme-for-beginners",
+      "text": "For Beginners",
+      "level": 3
+    },
+    {
+      "id": "readme-for-developers",
+      "text": "For Developers",
+      "level": 3
+    },
+    {
+      "id": "readme-usage-guide",
+      "text": "Usage Guide",
+      "level": 2
+    },
+    {
+      "id": "readme-dashboard-interface",
+      "text": "Dashboard Interface",
+      "level": 3
+    },
+    {
+      "id": "readme-interpreting-results",
+      "text": "Interpreting Results",
+      "level": 3
+    },
+    {
+      "id": "readme-analysis-signals-explained",
+      "text": "Analysis Signals Explained",
+      "level": 3
+    },
+    {
+      "id": "readme-api-endpoints",
+      "text": "API Endpoints",
+      "level": 2
+    },
+    {
+      "id": "readme-full-analysis",
+      "text": "Full Analysis",
+      "level": 3
+    },
+    {
+      "id": "readme-recent-analyses",
+      "text": "Recent Analyses",
+      "level": 3
+    },
+    {
+      "id": "readme-statistics",
+      "text": "Statistics",
+      "level": 3
+    },
+    {
+      "id": "readme-search",
+      "text": "Search",
+      "level": 3
+    },
+    {
+      "id": "readme-history",
+      "text": "History",
+      "level": 3
+    },
+    {
+      "id": "readme-hybrid-score-trend",
+      "text": "Hybrid Score Trend",
+      "level": 3
+    },
+    {
+      "id": "readme-model-status",
+      "text": "Model Status",
+      "level": 3
+    },
+    {
+      "id": "readme-batch-analysis",
+      "text": "Batch Analysis",
+      "level": 3
+    },
+    {
+      "id": "readme-project-structure",
+      "text": "Project Structure",
+      "level": 2
+    },
+    {
+      "id": "readme-technology-stack",
+      "text": "Technology Stack",
+      "level": 2
+    },
+    {
+      "id": "readme-backend",
+      "text": "Backend",
+      "level": 3
+    },
+    {
+      "id": "readme-data-processing",
+      "text": "Data Processing",
+      "level": 3
+    },
+    {
+      "id": "readme-machine-learning",
+      "text": "Machine Learning",
+      "level": 3
+    },
+    {
+      "id": "readme-frontend",
+      "text": "Frontend",
+      "level": 3
+    },
+    {
+      "id": "readme-machine-learning-models",
+      "text": "Machine Learning Models",
+      "level": 2
+    },
+    {
+      "id": "readme-phase-4-hybrid-scoring-engine",
+      "text": "Phase 4: Hybrid Scoring Engine",
+      "level": 3
+    },
+    {
+      "id": "readme-k-means-clustering",
+      "text": "K-Means Clustering",
+      "level": 4
+    },
+    {
+      "id": "readme-logistic-regression",
+      "text": "Logistic Regression",
+      "level": 4
+    },
+    {
+      "id": "readme-feature-scaler",
+      "text": "Feature Scaler",
+      "level": 4
+    },
+    {
+      "id": "readme-model-metadata",
+      "text": "Model Metadata",
+      "level": 4
+    },
+    {
+      "id": "readme-model-retraining",
+      "text": "Model Retraining",
+      "level": 3
+    },
+    {
+      "id": "readme-configuration",
+      "text": "Configuration",
+      "level": 2
+    },
+    {
+      "id": "readme-main-configuration-file",
+      "text": "Main Configuration File",
+      "level": 3
+    },
+    {
+      "id": "readme-key-settings",
+      "text": "Key Settings",
+      "level": 3
+    },
+    {
+      "id": "readme-environment-variables",
+      "text": "Environment Variables",
+      "level": 3
+    },
+    {
+      "id": "readme-database",
+      "text": "Database",
+      "level": 2
+    },
+    {
+      "id": "readme-data-structure",
+      "text": "Data Structure",
+      "level": 3
+    },
+    {
+      "id": "readme-database-queries",
+      "text": "Database Queries",
+      "level": 3
+    },
+    {
+      "id": "readme-database-backup",
+      "text": "Database Backup",
+      "level": 3
+    },
+    {
+      "id": "readme-troubleshooting",
+      "text": "Troubleshooting",
+      "level": 2
+    },
+    {
+      "id": "readme-issue-port-5000-already-in-use",
+      "text": "Issue: Port 5000 Already in Use",
+      "level": 3
+    },
+    {
+      "id": "readme-issue-module-import-errors",
+      "text": "Issue: Module Import Errors",
+      "level": 3
+    },
+    {
+      "id": "readme-issue-website-not-reachable",
+      "text": "Issue: Website Not Reachable",
+      "level": 3
+    },
+    {
+      "id": "readme-issue-slow-analysis-performance",
+      "text": "Issue: Slow Analysis Performance",
+      "level": 3
+    },
+    {
+      "id": "readme-issue-models-not-loading",
+      "text": "Issue: Models Not Loading",
+      "level": 3
+    },
+    {
+      "id": "readme-debug-mode",
+      "text": "Debug Mode",
+      "level": 3
+    },
+    {
+      "id": "readme-contributing",
+      "text": "Contributing",
+      "level": 2
+    },
+    {
+      "id": "readme-development-guidelines",
+      "text": "Development Guidelines",
+      "level": 3
+    },
+    {
+      "id": "readme-testing",
+      "text": "Testing",
+      "level": 3
+    },
+    {
+      "id": "readme-license",
+      "text": "License",
+      "level": 2
+    },
+    {
+      "id": "readme-contact--support",
+      "text": "Contact & Support",
+      "level": 2
+    },
+    {
+      "id": "readme-project-team",
+      "text": "Project Team",
+      "level": 3
+    },
+    {
+      "id": "readme-support-channels",
+      "text": "Support Channels",
+      "level": 3
+    },
+    {
+      "id": "readme-reporting-security-issues",
+      "text": "Reporting Security Issues",
+      "level": 3
+    },
+    {
+      "id": "readme-deployment-guide",
+      "text": "Deployment Guide",
+      "level": 2
+    },
+    {
+      "id": "readme-deploy-to-render",
+      "text": "Deploy to Render",
+      "level": 3
+    },
+    {
+      "id": "readme-deploy-to-heroku",
+      "text": "Deploy to Heroku",
+      "level": 3
+    },
+    {
+      "id": "readme-deploy-to-aws",
+      "text": "Deploy to AWS",
+      "level": 3
+    },
+    {
+      "id": "readme-docker-deployment",
+      "text": "Docker Deployment",
+      "level": 3
+    },
+    {
+      "id": "readme-performance-metrics",
+      "text": "Performance Metrics",
+      "level": 2
+    },
+    {
+      "id": "readme-roadmap",
+      "text": "Roadmap",
+      "level": 2
+    },
+    {
+      "id": "readme-v11-q3-2024",
+      "text": "v1.1 (Q3 2024)",
+      "level": 3
+    },
+    {
+      "id": "readme-v12-q4-2024",
+      "text": "v1.2 (Q4 2024)",
+      "level": 3
+    },
+    {
+      "id": "readme-v20-2025",
+      "text": "v2.0 (2025)",
+      "level": 3
+    },
+    {
+      "id": "readme-additional-resources",
+      "text": "Additional Resources",
+      "level": 2
+    },
+    {
+      "id": "readme-star-this-project",
+      "text": "Star This Project",
+      "level": 2
+    }
+  ],
+  "hasDiagrams": false,
+  "stats": {
+    "codeBlocks": 32,
+    "diagrams": 0,
+    "tables": 1,
+    "taskItems": 10,
+    "images": 4,
+    "words": 2245,
+    "links": 23,
+    "headings": 82
+  },
+  "verifiedTags": [
+    "Python",
+    "Flask",
+    "scikit-learn",
+    "K-Means"
+  ],
+  "unverifiedTags": [],
+  "stale": false,
+  "html": "<h2 id=\"readme-early-failure-detection-system-for-online-startups-using-hybrid-multi-signal-intelligence\">Early Failure Detection System for Online Startups Using Hybrid Multi-Signal Intelligence<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-early-failure-detection-system-for-online-startups-using-hybrid-multi-signal-intelligence\">#</a></h2>\n<p><img src=\"https://img.shields.io/badge/Python-3.9%2B-blue\" alt=\"Python\" loading=\"lazy\" decoding=\"async\" />\n<img src=\"https://img.shields.io/badge/Flask-3.0.0-green\" alt=\"Flask\" loading=\"lazy\" decoding=\"async\" />\n<img src=\"https://img.shields.io/badge/ML-Scikit--Learn-orange\" alt=\"Machine Learning\" loading=\"lazy\" decoding=\"async\" />\n<img src=\"https://img.shields.io/badge/Status-Active-brightgreen\" alt=\"Status\" loading=\"lazy\" decoding=\"async\" /></p>\n<hr />\n<h2 id=\"readme-table-of-contents\">Table of Contents<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-table-of-contents\">#</a></h2>\n<ul>\n<li><a href=\"#readme-overview\">Overview</a></li>\n<li><a href=\"#readme-features\">Features</a></li>\n<li><a href=\"#readme-architecture\">Architecture</a></li>\n<li><a href=\"#readme-system-requirements\">System Requirements</a></li>\n<li><a href=\"#readme-installation\">Installation</a></li>\n<li><a href=\"#readme-quick-start\">Quick Start</a></li>\n<li><a href=\"#readme-usage-guide\">Usage Guide</a></li>\n<li><a href=\"#readme-api-endpoints\">API Endpoints</a></li>\n<li><a href=\"#readme-project-structure\">Project Structure</a></li>\n<li><a href=\"#readme-technology-stack\">Technology Stack</a></li>\n<li><a href=\"#readme-machine-learning-models\">Machine Learning Models</a></li>\n<li><a href=\"#readme-configuration\">Configuration</a></li>\n<li><a href=\"#readme-database\">Database</a></li>\n<li><a href=\"#readme-troubleshooting\">Troubleshooting</a></li>\n<li><a href=\"#readme-contributing\">Contributing</a></li>\n<li><a href=\"#readme-license\">License</a></li>\n<li><a href=\"#readme-contact--support\">Contact</a></li>\n</ul>\n<hr />\n<h2 id=\"readme-overview\">Overview<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-overview\">#</a></h2>\n<p><strong>PulselensAI</strong> is an AI-driven early failure detection system designed for online startups. It combines three independent intelligence layers:</p>\n<ol>\n<li><strong>Website Intelligence</strong> - Analyzes website recency, depth, publishing frequency</li>\n<li><strong>Hiring Intelligence</strong> - Extracts growth signals from careers pages and job postings</li>\n<li><strong>Social Intelligence</strong> - Monitors social media engagement and platform presence</li>\n</ol>\n<p>These signals are integrated into a <strong>Hybrid Scoring Engine</strong> that computes:</p>\n<ul>\n<li><strong>Health Score</strong>: Overall startup operational health (0-100)</li>\n<li><strong>Risk Level</strong>: Failure risk classification (Low, Medium, High, Critical)</li>\n<li><strong>Failure Probability</strong>: Statistical ML-based risk estimation</li>\n<li><strong>Signal Breakdown</strong>: Explainable feature analysis for each signal type</li>\n</ul>\n<h3 id=\"readme-problem-it-solves\">Problem It Solves<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-problem-it-solves\">#</a></h3>\n<p>Most startup assessment methods rely on:</p>\n<ul>\n<li>Delayed financial disclosures</li>\n<li>Subjective analyst judgment</li>\n<li>Static checklists lacking adaptation</li>\n</ul>\n<p><strong>PulselensAI</strong> detects early warning signs of operational decline through <strong>live digital behavioral signals</strong> before traditional metrics reveal distress.</p>\n<hr />\n<h2 id=\"readme-features\">Features<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-features\">#</a></h2>\n<h3 id=\"readme-core-capabilities\">Core Capabilities<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-core-capabilities\">#</a></h3>\n<ul>\n<li><strong>Automated Website Discovery</strong> - Finds startup websites via domain/search strategies</li>\n<li><strong>Real-time Web Scraping</strong> - Extracts content recency and structural metrics</li>\n<li><strong>Hiring Pattern Analysis</strong> - Monitors recruitment activity and team stability</li>\n<li><strong>Social Media Intelligence</strong> - Tracks engagement decay and platform presence</li>\n<li><strong>Hybrid Risk Scoring</strong> - Combines three signal types with dynamic weighting</li>\n<li><strong>Failure Probability Modeling</strong> - ML-based risk prediction with K-Means clustering</li>\n<li><strong>Historical Trend Analysis</strong> - Tracks startup health over time</li>\n<li><strong>Batch Processing</strong> - Analyze multiple startups efficiently</li>\n<li><strong>RESTful API</strong> - Easy integration with third-party applications</li>\n<li><strong>Interactive Dashboard</strong> - Web-based UI for analysis and visualization</li>\n</ul>\n<h3 id=\"readme-phase-architecture\">Phase Architecture<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-phase-architecture\">#</a></h3>\n<ul>\n<li><strong>Phase 1</strong>: Website Intelligence</li>\n<li><strong>Phase 2</strong>: Hiring Intelligence</li>\n<li><strong>Phase 3</strong>: Social &amp; Engagement Intelligence</li>\n<li><strong>Phase 4</strong>: Hybrid Dynamic Scoring Engine (ML-Powered)</li>\n</ul>\n<hr />\n<h2 id=\"readme-architecture\">Architecture<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-architecture\">#</a></h2>\n<pre><code class=\"hljs\">+-----------------------------------------------------------+\n|              Frontend (Flask Templates + JS)                |\n+-----------------------------------------------------------+\n|                   Flask REST API Layer                     |\n+----------+----------+----------+----------+----------------+\n| Phase 1  | Phase 2  | Phase 3  | Database |   Phase 4      |\n| Website  | Hiring   | Social   | Manager  | Hybrid Score   |\n| Intel    | Intel    | Intel    |          | Engine (ML)    |\n+----------+----------+----------+----------+----------------+\n|     Backend Modules (Discovery, Scraping, Mining)         |\n+-----------------------------------------------------------+\n|            ML Models (KMeans, Logistic Regression)         |\n+-----------------------------------------------------------+\n</code></pre>\n<p><strong>Data Flow:</strong></p>\n<pre><code class=\"hljs\">Startup Input -&gt; Discovery -&gt; Scraping -&gt; Mining -&gt; Normalization\n    -&gt; Hybrid Scoring -&gt; Risk Clustering -&gt; Probability -&gt; Output\n</code></pre>\n<hr />\n<h2 id=\"readme-system-requirements\">System Requirements<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-system-requirements\">#</a></h2>\n<h3 id=\"readme-minimum-requirements\">Minimum Requirements<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-minimum-requirements\">#</a></h3>\n<ul>\n<li><strong>OS</strong>: Windows 10+, macOS 10.14+, or Linux (Ubuntu 18.04+)</li>\n<li><strong>Python</strong>: 3.9 or higher</li>\n<li><strong>RAM</strong>: 4GB minimum (8GB recommended)</li>\n<li><strong>Storage</strong>: 500MB free space</li>\n<li><strong>Internet</strong>: Required for web scraping and social data collection</li>\n</ul>\n<h3 id=\"readme-recommended-setup\">Recommended Setup<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-recommended-setup\">#</a></h3>\n<ul>\n<li><strong>Python</strong>: 3.10 or 3.11</li>\n<li><strong>RAM</strong>: 8GB+</li>\n<li><strong>SSD</strong>: For faster database operations</li>\n<li><strong>Environment</strong>: Virtual environment (venv/conda)</li>\n</ul>\n<hr />\n<h2 id=\"readme-installation\">Installation<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-installation\">#</a></h2>\n<h3 id=\"readme-option-1-automated-installation-windows\">Option 1: Automated Installation (Windows)<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-option-1-automated-installation-windows\">#</a></h3>\n<pre><code class=\"hljs language-bash\"><span class=\"hljs-comment\"># Simply double-click start.bat</span>\nstart.bat\n</code></pre>\n<p>This will automatically:</p>\n<ul>\n<li>Create/activate virtual environment</li>\n<li>Install dependencies</li>\n<li>Start the Flask server</li>\n<li>Open browser at <a href=\"http://localhost:5000\" target=\"_blank\" rel=\"noopener noreferrer\">http://localhost:5000</a></li>\n</ul>\n<h3 id=\"readme-option-2-manual-installation\">Option 2: Manual Installation<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-option-2-manual-installation\">#</a></h3>\n<h4 id=\"readme-step-1-clone-repository\">Step 1: Clone Repository<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-step-1-clone-repository\">#</a></h4>\n<pre><code class=\"hljs language-bash\">git <span class=\"hljs-built_in\">clone</span> https://github.com/SaiSriRam-Vanama/PulselensAi.git\n<span class=\"hljs-built_in\">cd</span> PulselensAi\n</code></pre>\n<h4 id=\"readme-step-2-create-virtual-environment\">Step 2: Create Virtual Environment<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-step-2-create-virtual-environment\">#</a></h4>\n<pre><code class=\"hljs language-bash\"><span class=\"hljs-comment\"># Windows</span>\npython -m venv .venv\n.venv\\Scripts\\activate\n\n<span class=\"hljs-comment\"># macOS/Linux</span>\npython3 -m venv .venv\n<span class=\"hljs-built_in\">source</span> .venv/bin/activate\n</code></pre>\n<h4 id=\"readme-step-3-install-dependencies\">Step 3: Install Dependencies<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-step-3-install-dependencies\">#</a></h4>\n<pre><code class=\"hljs language-bash\">pip install -r backend/requirements.txt\n</code></pre>\n<h4 id=\"readme-step-4-run-application\">Step 4: Run Application<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-step-4-run-application\">#</a></h4>\n<pre><code class=\"hljs language-bash\"><span class=\"hljs-built_in\">cd</span> backend\npython app.py\n</code></pre>\n<p>The application will start at <code>http://localhost:5000</code></p>\n<hr />\n<h2 id=\"readme-quick-start\">Quick Start<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-quick-start\">#</a></h2>\n<h3 id=\"readme-for-beginners\">For Beginners<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-for-beginners\">#</a></h3>\n<ol>\n<li><strong>Download the project</strong> or clone from GitHub</li>\n<li><strong>Double-click</strong> <code>start.bat</code> (Windows) or run <code>start.ps1</code> (PowerShell)</li>\n<li><strong>Browser opens automatically</strong> at <a href=\"http://localhost:5000\" target=\"_blank\" rel=\"noopener noreferrer\">http://localhost:5000</a></li>\n<li><strong>Enter a startup name</strong> and click \"Analyze\"</li>\n<li><strong>View results</strong> including risk score and signal breakdown</li>\n</ol>\n<h3 id=\"readme-for-developers\">For Developers<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-for-developers\">#</a></h3>\n<pre><code class=\"hljs language-bash\"><span class=\"hljs-comment\"># Terminal 1: Start Flask Backend</span>\n<span class=\"hljs-built_in\">cd</span> backend\npython app.py\n\n<span class=\"hljs-comment\"># Terminal 2: API Testing (Optional)</span>\ncurl -X POST http://localhost:5000/api/analyze \\\n  -H <span class=\"hljs-string\">\"Content-Type: application/json\"</span> \\\n  -d <span class=\"hljs-string\">'{\"startup_name\": \"TechStartup Inc\"}'</span>\n</code></pre>\n<hr />\n<h2 id=\"readme-usage-guide\">Usage Guide<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-usage-guide\">#</a></h2>\n<h3 id=\"readme-dashboard-interface\">Dashboard Interface<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-dashboard-interface\">#</a></h3>\n<ol>\n<li><strong>Search Bar</strong>: Enter startup name or URL</li>\n<li><strong>Analyze Button</strong>: Initiates full 4-phase analysis</li>\n<li><strong>Results Panel</strong>:<ul>\n<li>Overall Health Score (0-100)</li>\n<li>Risk Level Badge (Low/Medium/High/Critical)</li>\n<li>Failure Probability %</li>\n<li>Signal Breakdown (Web/Hiring/Social scores)</li>\n</ul>\n</li>\n</ol>\n<h3 id=\"readme-interpreting-results\">Interpreting Results<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-interpreting-results\">#</a></h3>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th>Risk Level</th>\n<th>Score Range</th>\n<th>Interpretation</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Low</strong></td>\n<td>70-100</td>\n<td>Startup showing strong operational health</td>\n</tr>\n<tr>\n<td><strong>Medium</strong></td>\n<td>50-69</td>\n<td>Monitor closely; some warning signs present</td>\n</tr>\n<tr>\n<td><strong>High</strong></td>\n<td>30-49</td>\n<td>Significant distress indicators; heightened risk</td>\n</tr>\n<tr>\n<td><strong>Critical</strong></td>\n<td>0-29</td>\n<td>Severe operational decline; imminent failure likely</td>\n</tr>\n</tbody></table></div>\n<h3 id=\"readme-analysis-signals-explained\">Analysis Signals Explained<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-analysis-signals-explained\">#</a></h3>\n<p><strong>Website Intelligence</strong></p>\n<ul>\n<li><strong>Recency</strong>: How fresh is the website content?</li>\n<li><strong>Depth</strong>: Complexity and completeness of website</li>\n<li><strong>Update Frequency</strong>: How often is content updated?</li>\n</ul>\n<p><strong>Hiring Intelligence</strong></p>\n<ul>\n<li><strong>Active Postings</strong>: Number of current job listings</li>\n<li><strong>Growth Trend</strong>: Hiring acceleration over time</li>\n<li><strong>Team Stability</strong>: Turnover indicators</li>\n</ul>\n<p><strong>Social Intelligence</strong></p>\n<ul>\n<li><strong>Engagement Rate</strong>: Activity frequency across platforms</li>\n<li><strong>Platform Presence</strong>: Diversity of social media presence</li>\n<li><strong>Engagement Decay</strong>: Recent activity changes</li>\n</ul>\n<hr />\n<h2 id=\"readme-api-endpoints\">API Endpoints<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-api-endpoints\">#</a></h2>\n<h3 id=\"readme-full-analysis\">Full Analysis<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-full-analysis\">#</a></h3>\n<pre><code class=\"hljs language-bash\">POST /api/analyze\nContent-Type: application/json\n\nRequest:\n{\n  <span class=\"hljs-string\">\"startup_name\"</span>: <span class=\"hljs-string\">\"Company Name\"</span>,\n  <span class=\"hljs-string\">\"startup_url\"</span>: <span class=\"hljs-string\">\"https://example.com\"</span> (optional)\n}\n\nResponse:\n{\n  <span class=\"hljs-string\">\"startup_name\"</span>: <span class=\"hljs-string\">\"Company Name\"</span>,\n  <span class=\"hljs-string\">\"hybrid_score\"</span>: 75.5,\n  <span class=\"hljs-string\">\"risk_level\"</span>: <span class=\"hljs-string\">\"low\"</span>,\n  <span class=\"hljs-string\">\"failure_probability\"</span>: 0.12,\n  <span class=\"hljs-string\">\"phase_scores\"</span>: {\n    <span class=\"hljs-string\">\"website\"</span>: 78,\n    <span class=\"hljs-string\">\"hiring\"</span>: 72,\n    <span class=\"hljs-string\">\"social\"</span>: 76\n  },\n  <span class=\"hljs-string\">\"timestamp\"</span>: <span class=\"hljs-string\">\"2024-04-28T10:30:00Z\"</span>\n}\n</code></pre>\n<h3 id=\"readme-recent-analyses\">Recent Analyses<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-recent-analyses\">#</a></h3>\n<pre><code class=\"hljs language-bash\">GET /api/recent?<span class=\"hljs-built_in\">limit</span>=10\n\nReturns last N analyses with scores and timestamps\n</code></pre>\n<h3 id=\"readme-statistics\">Statistics<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-statistics\">#</a></h3>\n<pre><code class=\"hljs language-bash\">GET /api/statistics\n\nReturns: Total analyses, average scores, risk distribution\n</code></pre>\n<h3 id=\"readme-search\">Search<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-search\">#</a></h3>\n<pre><code class=\"hljs language-bash\">GET /api/search?q=startup_name\n\nSearches cached analyses <span class=\"hljs-keyword\">for</span> matching startups\n</code></pre>\n<h3 id=\"readme-history\">History<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-history\">#</a></h3>\n<pre><code class=\"hljs language-bash\">GET /api/history/&lt;startup_name&gt;\n\nReturns historical analyses <span class=\"hljs-keyword\">for</span> specific startup\n</code></pre>\n<h3 id=\"readme-hybrid-score-trend\">Hybrid Score Trend<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-hybrid-score-trend\">#</a></h3>\n<pre><code class=\"hljs language-bash\">GET /api/hybrid/history/&lt;startup_name&gt;\n\nReturns hybrid score trend over <span class=\"hljs-keyword\">time</span> (useful <span class=\"hljs-keyword\">for</span> tracking improvement/decline)\n</code></pre>\n<h3 id=\"readme-model-status\">Model Status<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-model-status\">#</a></h3>\n<pre><code class=\"hljs language-bash\">GET /api/model/status\n\nReturns ML model metadata and performance metrics\n</code></pre>\n<h3 id=\"readme-batch-analysis\">Batch Analysis<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-batch-analysis\">#</a></h3>\n<pre><code class=\"hljs language-bash\">POST /api/batch\nContent-Type: application/json\n\nRequest:\n{\n  <span class=\"hljs-string\">\"startups\"</span>: [\n    <span class=\"hljs-string\">\"Company1\"</span>,\n    <span class=\"hljs-string\">\"Company2\"</span>,\n    <span class=\"hljs-string\">\"Company3\"</span>\n  ]\n}\n\nReturns: Batch results with cached scores\n</code></pre>\n<hr />\n<h2 id=\"readme-project-structure\">Project Structure<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-project-structure\">#</a></h2>\n<pre><code class=\"hljs\">PulselensAi/\n├── backend/\n│   ├── app.py                 # Flask application entry point\n│   ├── config.py              # Configuration settings\n│   ├── requirements.txt        # Python dependencies\n│   ├── database/\n│   │   └── models/\n│   │       ├── kmeans.joblib          # K-Means clustering model\n│   │       ├── lr.joblib              # Logistic Regression model\n│   │       ├── scaler.joblib          # Feature scaler\n│   │       └── meta.json              # Model metadata\n│   └── modules/\n│       ├── __init__.py\n│       ├── discovery.py        # Website discovery module\n│       ├── scraper.py          # Web scraping functionality\n│       ├── mining.py           # Data extraction &amp; feature mining\n│       ├── scoring.py          # Phase 1 scoring engine\n│       ├── database.py         # Database manager\n│       ├── hiring_scraper.py   # Hiring data scraper\n│       ├── hiring_mining.py    # Hiring feature extraction\n│       ├── social_scraper.py   # Social media scraper\n│       ├── social_mining.py    # Social data analysis\n│       └── hybrid_scoring.py   # Phase 4 hybrid scoring engine\n│\n├── frontend/\n│   ├── templates/\n│   │   └── index.html          # Main dashboard HTML\n│   └── static/\n│       ├── css/\n│       │   └── style.css       # Dashboard styling\n│       └── js/\n│           └── dashboard.js    # Client-side functionality\n│\n├── database/                   # Data storage directory\n├── .gitignore                  # Git ignore rules\n├── README.md                   # Project documentation (this file)\n├── Patent.MD                   # Patent disclosure form\n├── Running Commands.md         # Command reference\n├── start.bat                   # Windows batch startup script\n└── start.ps1                   # PowerShell startup script\n</code></pre>\n<hr />\n<h2 id=\"readme-technology-stack\">Technology Stack<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-technology-stack\">#</a></h2>\n<h3 id=\"readme-backend\">Backend<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-backend\">#</a></h3>\n<ul>\n<li><strong>Framework</strong>: Flask 3.0.0</li>\n<li><strong>Language</strong>: Python 3.9+</li>\n<li><strong>CORS</strong>: flask-cors 4.0.0</li>\n</ul>\n<h3 id=\"readme-data-processing\">Data Processing<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-data-processing\">#</a></h3>\n<ul>\n<li><strong>Web Scraping</strong>: BeautifulSoup4 4.12.2, lxml 4.9.3</li>\n<li><strong>HTTP Requests</strong>: requests 2.31.0</li>\n<li><strong>Data Analysis</strong>: pandas 2.1.4, numpy 1.26.2</li>\n</ul>\n<h3 id=\"readme-machine-learning\">Machine Learning<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-machine-learning\">#</a></h3>\n<ul>\n<li><strong>ML Library</strong>: scikit-learn 1.4.0</li>\n<li><strong>Model Serialization</strong>: joblib 1.3.2</li>\n</ul>\n<h3 id=\"readme-frontend\">Frontend<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-frontend\">#</a></h3>\n<ul>\n<li><strong>Markup</strong>: HTML5</li>\n<li><strong>Styling</strong>: CSS3</li>\n<li><strong>Client Logic</strong>: Vanilla JavaScript</li>\n</ul>\n<hr />\n<h2 id=\"readme-machine-learning-models\">Machine Learning Models<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-machine-learning-models\">#</a></h2>\n<h3 id=\"readme-phase-4-hybrid-scoring-engine\">Phase 4: Hybrid Scoring Engine<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-phase-4-hybrid-scoring-engine\">#</a></h3>\n<h4 id=\"readme-k-means-clustering\">K-Means Clustering<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-k-means-clustering\">#</a></h4>\n<ul>\n<li><strong>Purpose</strong>: Segment startups into risk strata</li>\n<li><strong>Features</strong>: Website, Hiring, Social normalized signals</li>\n<li><strong>Output</strong>: Risk cluster assignment (Low/Medium/High/Critical)</li>\n<li><strong>Model File</strong>: <code>backend/database/models/kmeans.joblib</code></li>\n</ul>\n<h4 id=\"readme-logistic-regression\">Logistic Regression<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-logistic-regression\">#</a></h4>\n<ul>\n<li><strong>Purpose</strong>: Predict failure probability</li>\n<li><strong>Features</strong>: Normalized phase scores + derived metrics</li>\n<li><strong>Output</strong>: Failure probability (0-1)</li>\n<li><strong>Model File</strong>: <code>backend/database/models/lr.joblib</code></li>\n</ul>\n<h4 id=\"readme-feature-scaler\">Feature Scaler<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-feature-scaler\">#</a></h4>\n<ul>\n<li><strong>Purpose</strong>: Normalize heterogeneous signals to [0,1] range</li>\n<li><strong>Type</strong>: StandardScaler with pre-fitted parameters</li>\n<li><strong>Model File</strong>: <code>backend/database/models/scaler.joblib</code></li>\n</ul>\n<h4 id=\"readme-model-metadata\">Model Metadata<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-model-metadata\">#</a></h4>\n<ul>\n<li><strong>Location</strong>: <code>backend/database/models/meta.json</code></li>\n<li><strong>Contains</strong>: Feature names, model versions, training accuracy, threshold parameters</li>\n</ul>\n<h3 id=\"readme-model-retraining\">Model Retraining<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-model-retraining\">#</a></h3>\n<p>Models are automatically updated as new historical data accumulates. Manual retraining can be triggered through:</p>\n<pre><code class=\"hljs language-bash\">python backend/modules/hybrid_scoring.py --retrain\n</code></pre>\n<hr />\n<h2 id=\"readme-configuration\">Configuration<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-configuration\">#</a></h2>\n<h3 id=\"readme-main-configuration-file\">Main Configuration File<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-main-configuration-file\">#</a></h3>\n<p>Edit <code>backend/config.py</code> for:</p>\n<ul>\n<li><strong>API Port</strong>: Default 5000</li>\n<li><strong>Database Path</strong>: Default <code>database/</code></li>\n<li><strong>Scraper Timeout</strong>: Default 30 seconds</li>\n<li><strong>Cache Settings</strong>: TTL and max size</li>\n<li><strong>Model Thresholds</strong>: Risk level boundaries</li>\n</ul>\n<h3 id=\"readme-key-settings\">Key Settings<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-key-settings\">#</a></h3>\n<pre><code class=\"hljs language-python\">FLASK_PORT = <span class=\"hljs-number\">5000</span>\nDATABASE_PATH = <span class=\"hljs-string\">'database/'</span>\nREQUEST_TIMEOUT = <span class=\"hljs-number\">30</span>\nCACHE_TTL = <span class=\"hljs-number\">3600</span>  <span class=\"hljs-comment\"># 1 hour</span>\nRISK_THRESHOLDS = {\n    <span class=\"hljs-string\">'critical'</span>: <span class=\"hljs-number\">30</span>,\n    <span class=\"hljs-string\">'high'</span>: <span class=\"hljs-number\">50</span>,\n    <span class=\"hljs-string\">'medium'</span>: <span class=\"hljs-number\">70</span>,\n}\n</code></pre>\n<h3 id=\"readme-environment-variables\">Environment Variables<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-environment-variables\">#</a></h3>\n<p>Create <code>.env</code> file for sensitive data:</p>\n<pre><code class=\"hljs\">FLASK_ENV=production\nSECRET_KEY=your_secret_key_here\nDATABASE_URL=sqlite:///database/startup_analysis.db\n</code></pre>\n<hr />\n<h2 id=\"readme-database\">Database<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-database\">#</a></h2>\n<h3 id=\"readme-data-structure\">Data Structure<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-data-structure\">#</a></h3>\n<p>The system stores:</p>\n<ul>\n<li><strong>Analysis Results</strong>: Startup name, scores, timestamp</li>\n<li><strong>Historical Data</strong>: Trend analysis for each startup</li>\n<li><strong>Feature Vectors</strong>: Extracted signals for ML model retraining</li>\n<li><strong>Model Artifacts</strong>: Trained models and scalers</li>\n</ul>\n<h3 id=\"readme-database-queries\">Database Queries<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-database-queries\">#</a></h3>\n<pre><code class=\"hljs language-bash\"><span class=\"hljs-comment\"># View recent analyses</span>\nSELECT * FROM analyses ORDER BY timestamp DESC LIMIT 10;\n\n<span class=\"hljs-comment\"># Get startup history</span>\nSELECT * FROM analyses WHERE startup_name = <span class=\"hljs-string\">'Company'</span> ORDER BY timestamp;\n\n<span class=\"hljs-comment\"># Average scores by risk level</span>\nSELECT risk_level, AVG(hybrid_score) FROM analyses GROUP BY risk_level;\n</code></pre>\n<h3 id=\"readme-database-backup\">Database Backup<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-database-backup\">#</a></h3>\n<pre><code class=\"hljs language-bash\"><span class=\"hljs-comment\"># Backup database</span>\n<span class=\"hljs-built_in\">cp</span> database/*.db backups/\n\n<span class=\"hljs-comment\"># Restore from backup</span>\n<span class=\"hljs-built_in\">cp</span> backups/*.db database/\n</code></pre>\n<hr />\n<h2 id=\"readme-troubleshooting\">Troubleshooting<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-troubleshooting\">#</a></h2>\n<h3 id=\"readme-issue-port-5000-already-in-use\">Issue: Port 5000 Already in Use<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-issue-port-5000-already-in-use\">#</a></h3>\n<p><strong>Solution</strong>:</p>\n<pre><code class=\"hljs language-bash\"><span class=\"hljs-comment\"># Windows - Kill process on port 5000</span>\nnetstat -ano | findstr :5000\ntaskkill /PID &lt;PID&gt; /F\n\n<span class=\"hljs-comment\"># macOS/Linux</span>\nlsof -ti:5000 | xargs <span class=\"hljs-built_in\">kill</span> -9\n</code></pre>\n<h3 id=\"readme-issue-module-import-errors\">Issue: Module Import Errors<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-issue-module-import-errors\">#</a></h3>\n<p><strong>Solution</strong>:</p>\n<pre><code class=\"hljs language-bash\"><span class=\"hljs-comment\"># Reinstall dependencies</span>\npip install --upgrade pip\npip install -r backend/requirements.txt --force-reinstall\n</code></pre>\n<h3 id=\"readme-issue-website-not-reachable\">Issue: Website Not Reachable<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-issue-website-not-reachable\">#</a></h3>\n<p><strong>Solution</strong>:</p>\n<ul>\n<li>Check internet connection</li>\n<li>Verify startup URL format (must include https://)</li>\n<li>Try analyzing by startup name instead of URL</li>\n</ul>\n<h3 id=\"readme-issue-slow-analysis-performance\">Issue: Slow Analysis Performance<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-issue-slow-analysis-performance\">#</a></h3>\n<p><strong>Solution</strong>:</p>\n<ul>\n<li>Increase timeout in config.py</li>\n<li>Run batch analysis instead of individual queries</li>\n<li>Check available system RAM (8GB+ recommended)</li>\n</ul>\n<h3 id=\"readme-issue-models-not-loading\">Issue: Models Not Loading<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-issue-models-not-loading\">#</a></h3>\n<p><strong>Solution</strong>:</p>\n<pre><code class=\"hljs language-bash\"><span class=\"hljs-comment\"># Retrain models</span>\n<span class=\"hljs-built_in\">cd</span> backend\npython -c <span class=\"hljs-string\">\"from modules.hybrid_scoring import HybridScoringEngine; HybridScoringEngine().retrain()\"</span>\n</code></pre>\n<h3 id=\"readme-debug-mode\">Debug Mode<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-debug-mode\">#</a></h3>\n<pre><code class=\"hljs language-bash\"><span class=\"hljs-comment\"># Enable verbose logging</span>\n<span class=\"hljs-built_in\">cd</span> backend\npython app.py --debug\n</code></pre>\n<hr />\n<h2 id=\"readme-contributing\">Contributing<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-contributing\">#</a></h2>\n<p>We welcome contributions! Here's how:</p>\n<ol>\n<li><strong>Fork</strong> the repository</li>\n<li><strong>Create</strong> a feature branch (<code>git checkout -b feature/amazing-feature</code>)</li>\n<li><strong>Commit</strong> changes (<code>git commit -m 'Add amazing feature'</code>)</li>\n<li><strong>Push</strong> to branch (<code>git push origin feature/amazing-feature</code>)</li>\n<li><strong>Open</strong> a Pull Request</li>\n</ol>\n<h3 id=\"readme-development-guidelines\">Development Guidelines<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-development-guidelines\">#</a></h3>\n<ul>\n<li>Follow PEP 8 Python style guide</li>\n<li>Add docstrings to all functions</li>\n<li>Include unit tests for new features</li>\n<li>Update README if adding new functionality</li>\n</ul>\n<h3 id=\"readme-testing\">Testing<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-testing\">#</a></h3>\n<pre><code class=\"hljs language-bash\"><span class=\"hljs-comment\"># Run tests</span>\npytest backend/tests/ -v\n\n<span class=\"hljs-comment\"># Coverage report</span>\npytest --cov=backend/modules backend/tests/\n</code></pre>\n<hr />\n<h2 id=\"readme-license\">License<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-license\">#</a></h2>\n<p>This project is part of an invention disclosure at <strong>Marwadi University</strong>.</p>\n<p><strong>Patent Status</strong>: Invention disclosure filed.</p>\n<p>For licensing inquiries, please contact the development team.</p>\n<hr />\n<h2 id=\"readme-contact--support\">Contact &amp; Support<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-contact--support\">#</a></h2>\n<h3 id=\"readme-project-team\">Project Team<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-project-team\">#</a></h3>\n<ul>\n<li><strong>Developed by</strong>: VANAMA SAI SRI RAM</li>\n<li><strong>Repository</strong>: <a href=\"https://github.com/SaiSriRam-Vanama/PulselensAi\" target=\"_blank\" rel=\"noopener noreferrer\">github.com/SaiSriRam-Vanama/PulselensAi</a></li>\n</ul>\n<h3 id=\"readme-support-channels\">Support Channels<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-support-channels\">#</a></h3>\n<ul>\n<li><strong>Issues</strong>: Report bugs via GitHub Issues</li>\n<li><strong>Discussions</strong>: Join GitHub Discussions</li>\n<li><strong>Email</strong>: [<a href=\"mailto:saisriram2796@gmail.com\">saisriram2796@gmail.com</a>]</li>\n<li><strong>LinkedIn</strong>: [<a href=\"https://www.linkedin.com/in/saisriramv/%5D\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.linkedin.com/in/saisriramv/]</a></li>\n</ul>\n<h3 id=\"readme-reporting-security-issues\">Reporting Security Issues<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-reporting-security-issues\">#</a></h3>\n<p>For security vulnerabilities, please email [security-email] instead of using the public issue tracker.</p>\n<hr />\n<h2 id=\"readme-deployment-guide\">Deployment Guide<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-deployment-guide\">#</a></h2>\n<h3 id=\"readme-deploy-to-render\">Deploy to Render<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-deploy-to-render\">#</a></h3>\n<p>Render is the recommended platform for this Flask app.</p>\n<ol>\n<li>Push this repository to GitHub.</li>\n<li>Create a new <strong>Web Service</strong> on Render.</li>\n<li>Connect the <code>SaiSriRam-Vanama/PulselensAi</code> repository.</li>\n<li>Use these settings:</li>\n</ol>\n<pre><code class=\"hljs language-yaml\"><span class=\"hljs-attr\">Root Directory:</span> <span class=\"hljs-string\">backend</span>\n<span class=\"hljs-attr\">Build Command:</span> <span class=\"hljs-string\">pip</span> <span class=\"hljs-string\">install</span> <span class=\"hljs-string\">-r</span> <span class=\"hljs-string\">requirements.txt</span>\n<span class=\"hljs-attr\">Start Command:</span> <span class=\"hljs-string\">gunicorn</span> <span class=\"hljs-string\">app:app</span> <span class=\"hljs-string\">--bind</span> <span class=\"hljs-number\">0.0</span><span class=\"hljs-number\">.0</span><span class=\"hljs-number\">.0</span><span class=\"hljs-string\">:$PORT</span>\n</code></pre>\n<ol start=\"5\">\n<li>Deploy the service.</li>\n</ol>\n<p>The included <a href=\"https://github.com/SaiSriRam-Vanama/PulselensAi/blob/main/render.yaml\" target=\"_blank\" rel=\"noopener noreferrer\">render.yaml</a> file already defines these settings for one-click deploys.</p>\n<h3 id=\"readme-deploy-to-heroku\">Deploy to Heroku<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-deploy-to-heroku\">#</a></h3>\n<pre><code class=\"hljs language-bash\"><span class=\"hljs-comment\"># Login to Heroku</span>\nheroku login\n\n<span class=\"hljs-comment\"># Create app</span>\nheroku create pulselens-ai\n\n<span class=\"hljs-comment\"># Deploy</span>\ngit push heroku main\n\n<span class=\"hljs-comment\"># View logs</span>\nheroku logs --<span class=\"hljs-built_in\">tail</span>\n</code></pre>\n<h3 id=\"readme-deploy-to-aws\">Deploy to AWS<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-deploy-to-aws\">#</a></h3>\n<pre><code class=\"hljs language-bash\"><span class=\"hljs-comment\"># Install AWS CLI</span>\npip install awscli\n\n<span class=\"hljs-comment\"># Configure credentials</span>\naws configure\n\n<span class=\"hljs-comment\"># Deploy using Elastic Beanstalk</span>\neb init -p python-3.10 pulselens-ai\neb create pulselens-ai-env\neb deploy\n</code></pre>\n<h3 id=\"readme-docker-deployment\">Docker Deployment<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-docker-deployment\">#</a></h3>\n<pre><code class=\"hljs language-dockerfile\"><span class=\"hljs-keyword\">FROM</span> python:<span class=\"hljs-number\">3.10</span>-slim\n<span class=\"hljs-keyword\">WORKDIR</span><span> /app</span>\n<span class=\"hljs-keyword\">COPY</span><span> backend/requirements.txt .</span>\n<span class=\"hljs-keyword\">RUN</span><span> pip install -r requirements.txt</span>\n<span class=\"hljs-keyword\">COPY</span><span> backend/ .</span>\n<span class=\"hljs-keyword\">CMD</span><span> [<span class=\"hljs-string\">\"python\"</span>, <span class=\"hljs-string\">\"app.py\"</span>]</span>\n</code></pre>\n<pre><code class=\"hljs language-bash\">docker build -t pulselens-ai .\ndocker run -p 5000:5000 pulselens-ai\n</code></pre>\n<hr />\n<h2 id=\"readme-performance-metrics\">Performance Metrics<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-performance-metrics\">#</a></h2>\n<ul>\n<li><strong>Average Analysis Time</strong>: 5-15 seconds per startup</li>\n<li><strong>Concurrent Users</strong>: Supports 100+ simultaneous connections</li>\n<li><strong>Data Retention</strong>: Historical data retained indefinitely</li>\n<li><strong>Model Accuracy</strong>: ~85% (validated on training set)</li>\n<li><strong>False Positive Rate</strong>: &lt;10%</li>\n</ul>\n<hr />\n<h2 id=\"readme-roadmap\">Roadmap<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-roadmap\">#</a></h2>\n<h3 id=\"readme-v11-q3-2024\">v1.1 (Q3 2024)<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-v11-q3-2024\">#</a></h3>\n<ul>\n<li><input disabled=\"disabled\" type=\"checkbox\" /> API authentication &amp; rate limiting</li>\n<li><input disabled=\"disabled\" type=\"checkbox\" /> Advanced filtering &amp; comparison tools</li>\n<li><input disabled=\"disabled\" type=\"checkbox\" /> Custom alert thresholds</li>\n</ul>\n<h3 id=\"readme-v12-q4-2024\">v1.2 (Q4 2024)<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-v12-q4-2024\">#</a></h3>\n<ul>\n<li><input disabled=\"disabled\" type=\"checkbox\" /> Mobile-responsive dashboard</li>\n<li><input disabled=\"disabled\" type=\"checkbox\" /> Export to PDF/Excel reports</li>\n<li><input disabled=\"disabled\" type=\"checkbox\" /> Email alert notifications</li>\n</ul>\n<h3 id=\"readme-v20-2025\">v2.0 (2025)<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-v20-2025\">#</a></h3>\n<ul>\n<li><input disabled=\"disabled\" type=\"checkbox\" /> Financial data integration</li>\n<li><input disabled=\"disabled\" type=\"checkbox\" /> Founder/team network analysis</li>\n<li><input disabled=\"disabled\" type=\"checkbox\" /> Multi-language support</li>\n<li><input disabled=\"disabled\" type=\"checkbox\" /> Graph database integration</li>\n</ul>\n<hr />\n<h2 id=\"readme-additional-resources\">Additional Resources<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-additional-resources\">#</a></h2>\n<ul>\n<li><strong>Patent Disclosure</strong>: See <code>Patent.MD</code></li>\n<li><strong>Command Reference</strong>: See <code>Running Commands.md</code></li>\n<li><strong>Scientific Paper</strong>: [Link to academic publication if available]</li>\n<li><strong>API Documentation</strong>: See <code>/api/docs</code></li>\n</ul>\n<hr />\n<h2 id=\"readme-star-this-project\">Star This Project<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-star-this-project\">#</a></h2>\n<p>If you find PulselensAI useful, please star this repository and share with others!</p>\n<hr />\n<p><em>\"Detect startup distress before it becomes a crisis.\"</em></p>\n"
+}

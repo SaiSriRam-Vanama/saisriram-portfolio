@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "slug": "cloudburst-ai",
+  "status": "ok",
+  "repo": {
+    "owner": "SaiSriRam-Vanama",
+    "name": "cloudburst-ai",
+    "url": "https://github.com/SaiSriRam-Vanama/cloudburst-ai"
+  },
+  "readme": {
+    "path": "README.md",
+    "htmlUrl": "https://github.com/SaiSriRam-Vanama/cloudburst-ai/blob/main/README.md",
+    "branch": "main",
+    "sha": "a4804f1fe029b78217ae244bc7367b7d5d4fe0d2",
+    "etag": "W/\"a4804f1fe029b78217ae244bc7367b7d5d4fe0d2\"",
+    "via": "api",
+    "fetchedAt": "2026-11-12T11:18:31.954Z",
+    "bytes": 12603
+  },
+  "title": null,
+  "description": "CloudBurst AI is a Python research and monitoring application for next-day rainfall prediction and configurable cloudburst risk assessment. It combines a…",
+  "droppedTitle": true,
+  "headings": [
+    {
+      "id": "readme-project-status",
+      "text": "Project Status",
+      "level": 2
+    },
+    {
+      "id": "readme-problem-statement",
+      "text": "Problem Statement",
+      "level": 2
+    },
+    {
+      "id": "readme-features",
+      "text": "Features",
+      "level": 2
+    },
+    {
+      "id": "readme-architecture",
+      "text": "Architecture",
+      "level": 2
+    },
+    {
+      "id": "readme-technologies",
+      "text": "Technologies",
+      "level": 2
+    },
+    {
+      "id": "readme-dataset-and-data-sources",
+      "text": "Dataset and Data Sources",
+      "level": 2
+    },
+    {
+      "id": "readme-machine-learning-approach",
+      "text": "Machine Learning Approach",
+      "level": 2
+    },
+    {
+      "id": "readme-lstm-architecture",
+      "text": "LSTM Architecture",
+      "level": 3
+    },
+    {
+      "id": "readme-transfer-learning",
+      "text": "Transfer Learning",
+      "level": 3
+    },
+    {
+      "id": "readme-shap-explainability",
+      "text": "SHAP Explainability",
+      "level": 3
+    },
+    {
+      "id": "readme-risk-prediction",
+      "text": "Risk Prediction",
+      "level": 3
+    },
+    {
+      "id": "readme-api-and-command-usage",
+      "text": "API and Command Usage",
+      "level": 2
+    },
+    {
+      "id": "readme-local-setup",
+      "text": "Local Setup",
+      "level": 2
+    },
+    {
+      "id": "readme-environment-variables",
+      "text": "Environment Variables",
+      "level": 2
+    },
+    {
+      "id": "readme-deployment",
+      "text": "Deployment",
+      "level": 2
+    },
+    {
+      "id": "readme-limitations",
+      "text": "Limitations",
+      "level": 2
+    }
+  ],
+  "hasDiagrams": true,
+  "stats": {
+    "codeBlocks": 3,
+    "diagrams": 1,
+    "tables": 1,
+    "taskItems": 0,
+    "images": 0,
+    "words": 1727,
+    "links": 0,
+    "headings": 16
+  },
+  "verifiedTags": [
+    "Python",
+    "TensorFlow",
+    "LSTM",
+    "SHAP",
+    "Streamlit",
+    "SQLite"
+  ],
+  "unverifiedTags": [],
+  "stale": false,
+  "html": "<p>CloudBurst AI is a Python research and monitoring application for next-day rainfall prediction and configurable cloudburst risk assessment. It combines a daily-weather sequence model, a Streamlit dashboard, a SQLite history store, and optional email and SMS alerts.</p>\n<h2 id=\"readme-project-status\">Project Status<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-project-status\">#</a></h2>\n<p>This repository contains a research prototype and local monitoring workflow. It is not a certified forecasting or emergency-warning service. No public REST API is implemented; the weather API module makes outbound requests to OpenWeather. The live pipeline is configured for one target location per process, defaulting to Gangtok.</p>\n<h2 id=\"readme-problem-statement\">Problem Statement<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-problem-statement\">#</a></h2>\n<p>The project aims to use recent weather history and current daily observations to estimate next-day rainfall and summarize related risk factors. Its intended users are researchers and operators reviewing weather conditions across Himalayan locations. Predictions and risk scores require independent validation before operational or emergency use.</p>\n<h2 id=\"readme-features\">Features<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-features\">#</a></h2>\n<ul>\n<li>NASA POWER historical weather ingestion for model development.</li>\n<li>OpenWeather One Call 3.0 daily aggregation for live weather input.</li>\n<li>Seven-day, twelve-feature input sequences for next-day rainfall prediction.</li>\n<li>Source-location pretraining and Gangtok transfer learning.</li>\n<li>Monte Carlo dropout estimates for prediction uncertainty.</li>\n<li>Configurable composite risk scoring using rainfall, humidity, wind speed, and season.</li>\n<li>SHAP GradientExplainer attributions for the rainfall model output.</li>\n<li>Streamlit dashboard backed by SQLite prediction, risk, and alert history.</li>\n<li>Optional SMTP email and Twilio SMS alerts.</li>\n<li>APScheduler-based recurring pipeline execution.</li>\n</ul>\n<h2 id=\"readme-architecture\">Architecture<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-architecture\">#</a></h2>\n<figure class=\"diagram\" data-mermaid><pre class=\"diagram-src\">flowchart LR\n    NASA[NASA POWER daily history] --&gt; DATA[Historical data and preprocessing]\n    DATA --&gt; TRAIN[Source LSTM pretraining]\n    TRAIN --&gt; TRANSFER[Gangtok transfer learning]\n    TRANSFER --&gt; MODEL[Final two-layer LSTM]\n\n    OW[OpenWeather daily aggregation] --&gt; HISTORY[Validated daily history]\n    HISTORY --&gt; PREP[Seven-day live preprocessing]\n    MODEL --&gt; PRED[Rainfall prediction and uncertainty]\n    PREP --&gt; PRED\n    PRED --&gt; RISK[Composite risk scoring]\n    PRED --&gt; SHAP[SHAP feature attribution]\n    RISK --&gt; DB[(SQLite)]\n    SHAP --&gt; DB\n    DB --&gt; DASH[Streamlit dashboard]\n    RISK --&gt; ALERTS[Optional email and SMS alerts]\n    SCHED[APScheduler] --&gt; HISTORY</pre></figure>\n<p>The implementation is organized as follows:</p>\n<ul>\n<li><code>dashboard/</code>: Streamlit UI.</li>\n<li><code>api/</code>: outbound weather-provider integration.</li>\n<li><code>pipeline/</code>, <code>prediction/</code>, <code>risk_engine/</code>, <code>explainability/</code>: live inference workflow.</li>\n<li><code>database/</code>, <code>alerts/</code>, <code>scheduler/</code>: persistence, notifications, and recurring execution.</li>\n<li><code>training/</code>, <code>transfer_learning/</code>, <code>utils/</code>: historical-data processing and model development.</li>\n<li><code>data/</code>, <code>models/</code>, <code>outputs/</code>: input data, model artifacts, and generated results.</li>\n</ul>\n<p>The dashboard and pipeline currently share one Python codebase. There is no separate JavaScript frontend or inbound application API.</p>\n<h2 id=\"readme-technologies\">Technologies<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-technologies\">#</a></h2>\n<ul>\n<li>Python 3.11 recommended for the current dependency set.</li>\n<li>TensorFlow/Keras, NumPy, pandas, and scikit-learn.</li>\n<li>SHAP, Matplotlib, Seaborn, and Plotly.</li>\n<li>Streamlit, Requests, APScheduler, and SQLite.</li>\n<li>SMTP for email and Twilio for optional SMS delivery.</li>\n</ul>\n<p>Install Python dependencies from <code>requirements.txt</code>. This project does not have <code>package.json</code> or Node.js frontend dependencies.</p>\n<h2 id=\"readme-dataset-and-data-sources\">Dataset and Data Sources<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-dataset-and-data-sources\">#</a></h2>\n<p>Historical daily observations are obtained from the NASA POWER point API. <code>dataset.py</code> requests maximum and minimum temperature, relative humidity, wind speed, and corrected precipitation for Dehradun, Shimla, Manali, Mussoorie, and Gangtok. The downloader's configured date range is 2015-01-01 through 2025-12-31.</p>\n<p>Live observations use OpenWeather One Call 3.0 Daily Aggregation. The pipeline expects daily precipitation totals; a current-weather interval such as one-hour rainfall is not an equivalent model input. Live daily history is stored in SQLite. The inference preprocessing currently seeds that history from <code>outputs/v2_corrected_experiment/v2_corrected_processed_dataset.csv</code>, which is therefore retained by the Git ignore rules.</p>\n<p>The raw and intermediate training datasets are not committed by default. To retrain from a fresh checkout, obtain the NASA POWER data and place the combined dataset at <code>data/raw/combined_weather_dataset.csv</code>, which is the Phase 1 loader's expected input path.</p>\n<h2 id=\"readme-machine-learning-approach\">Machine Learning Approach<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-machine-learning-approach\">#</a></h2>\n<p>The model predicts next-day rainfall from a sequence of seven daily rows with twelve selected features: location encoding, scaled temperature, humidity, wind and rainfall values, rainfall lags and rolling means, season, and day of year. Live preprocessing combines six contiguous prior daily records with the current daily observation.</p>\n<h3 id=\"readme-lstm-architecture\">LSTM Architecture<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-lstm-architecture\">#</a></h3>\n<p>The selected model has an input shape of <code>(7, 12)</code>, followed by an LSTM layer with 64 units and sequence output, dropout, a 32-unit LSTM layer, dropout, and a one-unit dense rainfall output. The experiment configuration uses a dropout rate of 0.2. The final model contract is checked by <code>utils/final_model_guard.py</code> before inference.</p>\n<h3 id=\"readme-transfer-learning\">Transfer Learning<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-transfer-learning\">#</a></h3>\n<p>The transfer workflow pretrains on Dehradun, Shimla, Manali, and Mussoorie, then adapts the model to Gangtok. The final transfer step loads the source-pretrained two-layer LSTM, freezes the 64-unit LSTM layer, and fine-tunes the remaining trainable layers on Gangtok adaptation data. Training and evaluation arrays are experiment artifacts, not required for inference.</p>\n<h3 id=\"readme-shap-explainability\">SHAP Explainability<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-shap-explainability\">#</a></h3>\n<p>Live explanations use SHAP <code>GradientExplainer</code> with up to 50 background samples drawn from Gangtok rows in the processed historical dataset. Feature contributions are summarized over the seven time steps and describe attribution to the rainfall model output. They are not causal explanations and do not independently validate the risk score.</p>\n<h3 id=\"readme-risk-prediction\">Risk Prediction<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-risk-prediction\">#</a></h3>\n<p>The risk engine combines rainfall, humidity, wind speed, and seasonal components using weights stored in <code>models/risk_config.json</code> (0.50, 0.25, 0.15, and 0.10 respectively). Its configured score boundaries are 35, 60, and 80 on a 0-100 scale. These are configurable heuristic settings, not calibrated probabilities of a cloudburst.</p>\n<h2 id=\"readme-api-and-command-usage\">API and Command Usage<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-api-and-command-usage\">#</a></h2>\n<p>There is no inbound HTTP API. <code>api/weather_api.py</code> calls the external OpenWeather endpoint; <code>dataset.py</code> downloads NASA POWER data. The command-line entry point is <code>main.py</code>:</p>\n<pre><code class=\"hljs language-powershell\">python main.py <span class=\"hljs-literal\">--dashboard</span>\npython main.py <span class=\"hljs-literal\">--run-pipeline</span>\npython main.py <span class=\"hljs-literal\">--scheduler</span>\n</code></pre>\n<p>Run the dashboard and scheduler in separate terminals when both are needed. The scheduler runs a pipeline once at startup, then repeats at the configured interval. Bare <code>python main.py</code> runs the Phase 1 training pipeline, not the dashboard.</p>\n<p>The weather integration defaults to no synthetic fallback. If live API access is missing or fails, the live pipeline reports that weather is unavailable; it does not replace provider data with synthetic weather. The OpenWeather daily endpoint requires access to One Call 3.0 daily aggregation.</p>\n<p>For the free public demo, start the dashboard and select <strong>Run Historical Demo</strong>. It uses the seven latest contiguous, already-engineered Gangtok rows in <code>outputs/v2_corrected_experiment/v2_corrected_processed_dataset.csv</code>, runs the final trained model, and labels the output as a historical next-day demonstration. It requires no OpenWeather key and never presents synthetic values as live weather. <strong>Fetch Live Weather</strong> is a separate optional action; without a configured key or successful daily access, it reports that live weather is unavailable and leaves the historical demo available. <code>USE_MOCK_DATA=True</code> is an explicit synthetic test mode and is visibly labeled as synthetic.</p>\n<h2 id=\"readme-local-setup\">Local Setup<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-local-setup\">#</a></h2>\n<p>Create and activate a virtual environment, then install dependencies:</p>\n<pre><code class=\"hljs language-powershell\">python <span class=\"hljs-literal\">-m</span> venv .venv\n.\\.venv\\Scripts\\Activate.ps1\npython <span class=\"hljs-literal\">-m</span> pip install <span class=\"hljs-literal\">--upgrade</span> pip\npython <span class=\"hljs-literal\">-m</span> pip install <span class=\"hljs-literal\">-r</span> requirements.txt\n</code></pre>\n<p>On macOS or Linux, activate with <code>source .venv/bin/activate</code> instead. For a fresh checkout, copy <code>.env.example</code> to <code>.env</code> and keep the <code>.env</code> file local. The example lists credential variable names with empty values; ordinary non-secret settings can be omitted to use the defaults below. Do not overwrite an existing <code>.env</code> containing local credentials.</p>\n<p>Start the dashboard:</p>\n<pre><code class=\"hljs language-powershell\">python main.py <span class=\"hljs-literal\">--dashboard</span>\n</code></pre>\n<p>By default Streamlit listens on port 8501. Open <code>http://localhost:8501</code> in a browser. To run predictions, start <code>python main.py --scheduler</code> in another terminal or run the one-shot pipeline command above.</p>\n<p>The Phase 1 training command requires the historical combined CSV at <code>data/raw/combined_weather_dataset.csv</code>. The free Historical Demo requires the final model artifacts and processed dataset listed above, which are included in the deployment bundle.</p>\n<h2 id=\"readme-environment-variables\">Environment Variables<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-environment-variables\">#</a></h2>\n<p>Credential names are listed in <code>.env.example</code>; never put real values in that file or commit <code>.env</code>.</p>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th>Variable</th>\n<th>Purpose</th>\n<th>Default or requirement</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>OPENWEATHER_API_KEY</code></td>\n<td>OpenWeather credential</td>\n<td>Required for live weather; not required in mock mode</td>\n</tr>\n<tr>\n<td><code>USE_MOCK_DATA</code></td>\n<td>Explicitly use synthetic test observations instead of OpenWeather</td>\n<td><code>False</code>; synthetic mode is not live or historical</td>\n</tr>\n<tr>\n<td><code>TARGET_LOCATION</code></td>\n<td>Target location name</td>\n<td><code>Gangtok</code></td>\n</tr>\n<tr>\n<td><code>TARGET_LAT</code>, <code>TARGET_LON</code></td>\n<td>Target coordinates used by mock/current-weather code</td>\n<td><code>27.3389</code>, <code>88.6065</code></td>\n</tr>\n<tr>\n<td><code>DB_PATH</code></td>\n<td>SQLite database location</td>\n<td><code>database/cloudburst_predictions.db</code></td>\n</tr>\n<tr>\n<td><code>ENABLE_EMAIL</code></td>\n<td>Enable SMTP alerts</td>\n<td><code>False</code></td>\n</tr>\n<tr>\n<td><code>SMTP_HOST</code>, <code>SMTP_PORT</code></td>\n<td>SMTP server configuration</td>\n<td><code>smtp.gmail.com</code>, <code>587</code></td>\n</tr>\n<tr>\n<td><code>SMTP_USER</code>, <code>SMTP_PASSWORD</code></td>\n<td>SMTP sender credentials</td>\n<td>Required when email is enabled</td>\n</tr>\n<tr>\n<td><code>ALERT_RECIPIENT_EMAIL</code></td>\n<td>Email destination</td>\n<td>Required when email is enabled</td>\n</tr>\n<tr>\n<td><code>ENABLE_SMS</code></td>\n<td>Enable Twilio alerts</td>\n<td><code>False</code></td>\n</tr>\n<tr>\n<td><code>TWILIO_ACCOUNT_SID</code>, <code>TWILIO_AUTH_TOKEN</code></td>\n<td>Twilio credentials</td>\n<td>Required when SMS is enabled</td>\n</tr>\n<tr>\n<td><code>TWILIO_FROM_NUMBER</code>, <code>ALERT_RECIPIENT_PHONE</code></td>\n<td>Twilio sender and destination numbers</td>\n<td>Required when SMS is enabled</td>\n</tr>\n<tr>\n<td><code>ALERT_THRESHOLD</code></td>\n<td>Minimum alert risk level</td>\n<td><code>HIGH</code></td>\n</tr>\n<tr>\n<td><code>SCHEDULER_INTERVAL_MINUTES</code></td>\n<td>Scheduled pipeline interval</td>\n<td><code>30</code></td>\n</tr>\n<tr>\n<td><code>DASHBOARD_PORT</code></td>\n<td>Streamlit dashboard port</td>\n<td><code>8501</code></td>\n</tr>\n</tbody></table></div>\n<h2 id=\"readme-deployment\">Deployment<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-deployment\">#</a></h2>\n<p>No Dockerfile, process manifest, or cloud-provider deployment configuration is included. For a small demonstration, deploy one instance with persistent storage and run the dashboard and scheduler as separate supervised processes. Keep the SQLite database on durable storage and ensure the model and seed dataset are included.</p>\n<p>For a production service, deploy the dashboard and scheduled worker separately, use a shared managed database, store credentials in the hosting platform's secret manager, and package or version the model and historical seed data. The current database layer is SQLite-specific, so a shared database deployment requires a database-adapter change. Ensure only one scheduled worker runs unless duplicate pipeline jobs are prevented.</p>\n<p>The <code>.gitignore</code> keeps raw/intermediate datasets, training outputs, local databases, secrets, and alternate experiment models out of Git. It explicitly allows the final inference model, scaler, and processed-history CSV currently required by live inference. If these artifacts are moved to artifact storage or Git LFS, update the deployment process and ignore exceptions together.</p>\n<h2 id=\"readme-limitations\">Limitations<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-limitations\">#</a></h2>\n<ul>\n<li>This is a prototype, not a certified disaster-warning system. Do not use it as the sole basis for public safety decisions.</li>\n<li>The live pipeline processes one target location per configured process; multi-location orchestration is not implemented as a single service workflow.</li>\n<li>The historical demo replays the latest packaged contiguous Gangtok observations; it is not a current forecast. The live pipeline requires OpenWeather One Call 3.0 access and contiguous daily history. Synthetic mock observations are for testing only and are not validated real-world weather.</li>\n<li>Composite risk thresholds and weights are configurable heuristics and should be calibrated and independently reviewed.</li>\n<li>SHAP values describe model-output attribution, not causality or certainty.</li>\n<li>SQLite is suitable for local or single-instance use, not concurrent multi-replica production deployment on ephemeral storage.</li>\n<li>Retraining requires historical datasets and generates large intermediate arrays and experiment artifacts that are intentionally excluded from Git.</li>\n</ul>\n"
+}

@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Design tokens - colours and fonts for the light and dark themes
+   ========================================================================== */
+
+/* Light theme (default) + fonts + iOS safe-area padding */
+:root {
+  --bg: #F7F4EE;
+  --alt: #EFEBE2;
+  --sf: #fff;
+  --ink: #15171C;
+  --mu: #5B606B;
+  --ln: #E2DDD0;
+  --ac: #2347C5;
+  --so: #E6EBFA;
+  --oa: #fff;
+  --lv: #1E7B4F;
+  --pn: #15171C;
+  --pt: #F7F4EE;
+  --serif: Fraunces,Georgia,serif;
+  --sans: Inter,system-ui,sans-serif;
+  --mono: "JetBrains Mono",ui-monospace,monospace;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top,0px);
+  padding-bottom: env(safe-area-inset-bottom,0px);
+}
+
+/* Dark theme: follows the system setting until the visitor picks a theme */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme=light]) {
+    --bg: #101216;
+    --alt: #1B1F26;
+    --sf: #181B21;
+    --ink: #ECE9E1;
+    --mu: #A0A5B0;
+    --ln: #2A2E37;
+    --ac: #8FA8FF;
+    --so: #1E2740;
+    --oa: #0B1020;
+    --lv: #4FC38A;
+    --pn: #1F232B;
+    --pt: #ECE9E1;
+  }
+}
+
+/* Dark theme: explicit choice via the theme toggle (data-theme="dark") */
+:root[data-theme=dark] {
+  --bg: #101216;
+  --alt: #1B1F26;
+  --sf: #181B21;
+  --ink: #ECE9E1;
+  --mu: #A0A5B0;
+  --ln: #2A2E37;
+  --ac: #8FA8FF;
+  --so: #1E2740;
+  --oa: #0B1020;
+  --lv: #4FC38A;
+  --pn: #1F232B;
+  --pt: #ECE9E1;
+}

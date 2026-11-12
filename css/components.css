@@ -1,0 +1,147 @@
+/* ==========================================================================
+   Components - reusable buttons, status dot, call-to-action row and cards
+   ========================================================================== */
+
+/* Buttons: .bt = primary pill, .bg = outlined pill, .sm = small, .inv = on dark panel */
+.bt {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  height: 52px;
+  padding: 0 9px 0 26px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--bg);
+  font: 500 15px var(--sans);
+  border: 0;
+  cursor: pointer;
+  transition: transform .15s;
+}
+
+.bt:hover {
+  transform: translateY(-2px);
+}
+
+.bt i {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--ac);
+  color: var(--oa);
+  display: grid;
+  place-items: center;
+  font-style: normal;
+  font-size: 17px;
+  transform: rotate(-45deg);
+  transition: transform .25s;
+}
+
+.bt:hover i {
+  transform: none;
+}
+
+.bg {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 52px;
+  padding: 0 26px;
+  border-radius: 999px;
+  border: 1.5px solid var(--ink);
+  font: 500 15px var(--sans);
+  cursor: pointer;
+  transition: color .25s;
+}
+
+.bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--ink);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .3s;
+  z-index: -1;
+}
+
+.bg:hover {
+  color: var(--bg);
+}
+
+.bg:hover::before {
+  transform: scaleX(1);
+}
+
+.sm {
+  height: 40px;
+  font-size: 14px;
+}
+
+.bg.sm {
+  padding: 0 18px;
+}
+
+.bt.sm {
+  padding: 0 5px 0 18px;
+}
+
+.bt.sm i {
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.inv.bt {
+  background: var(--pt);
+  color: var(--pn);
+}
+
+.inv.bg {
+  border-color: var(--pt);
+  color: var(--pt);
+}
+
+.inv.bg::before {
+  background: var(--pt);
+}
+
+.inv.bg:hover {
+  color: var(--pn);
+}
+
+/* Call-to-action row and live status dot */
+.cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--lv);
+  display: inline-block;
+}
+
+/* Hard-offset card */
+.cd {
+  background: var(--sf);
+  border: 1.5px solid var(--ink);
+  border-radius: 16px;
+  transition: transform .2s,box-shadow .2s;
+}
+
+.cd:hover {
+  transform: translate(-3px,-3px);
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+.cd.rv.in:hover {
+  transform: translate(-3px,-3px);
+}

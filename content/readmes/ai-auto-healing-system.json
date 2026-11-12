@@ -1,0 +1,130 @@
+{
+  "schema": 1,
+  "slug": "ai-auto-healing-system",
+  "status": "ok",
+  "repo": {
+    "owner": "SaiSriRam-Vanama",
+    "name": "Self-Adaptive-AI-Engine-for-Auto-Healing-Cloud-Infrastructure",
+    "url": "https://github.com/SaiSriRam-Vanama/Self-Adaptive-AI-Engine-for-Auto-Healing-Cloud-Infrastructure"
+  },
+  "readme": {
+    "path": "readme.md",
+    "htmlUrl": "https://github.com/SaiSriRam-Vanama/Self-Adaptive-AI-Engine-for-Auto-Healing-Cloud-Infrastructure/blob/main/readme.md",
+    "branch": "main",
+    "sha": "5d3a7c85db239a5afce55a4a4253dac6c6c73282",
+    "etag": "W/\"5d3a7c85db239a5afce55a4a4253dac6c6c73282\"",
+    "via": "api",
+    "fetchedAt": "2026-11-12T11:18:33.563Z",
+    "bytes": 7298
+  },
+  "title": "Auto-Healing AI — Self-Healing Server Monitoring & Anomaly Detection System",
+  "description": "Auto-Healing AI is an intelligent, self-healing server monitoring system that continuously tracks server metrics (CPU, memory, error rate), detects…",
+  "droppedTitle": false,
+  "headings": [
+    {
+      "id": "readme-auto-healing-ai--self-healing-server-monitoring--anomaly-detection-system",
+      "text": "Auto-Healing AI — Self-Healing Server Monitoring & Anomaly Detection System",
+      "level": 1
+    },
+    {
+      "id": "readme-description",
+      "text": "Description",
+      "level": 2
+    },
+    {
+      "id": "readme-features",
+      "text": "Features",
+      "level": 2
+    },
+    {
+      "id": "readme-tech-stack",
+      "text": "Tech Stack",
+      "level": 2
+    },
+    {
+      "id": "readme-installation",
+      "text": "Installation",
+      "level": 2
+    },
+    {
+      "id": "readme-prerequisites",
+      "text": "Prerequisites",
+      "level": 3
+    },
+    {
+      "id": "readme-steps",
+      "text": "Steps",
+      "level": 3
+    },
+    {
+      "id": "readme-usage",
+      "text": "Usage",
+      "level": 2
+    },
+    {
+      "id": "readme-live-dashboard",
+      "text": "Live Dashboard",
+      "level": 3
+    },
+    {
+      "id": "readme-cli-mode-headless-monitoring",
+      "text": "CLI Mode (Headless Monitoring)",
+      "level": 3
+    },
+    {
+      "id": "readme-running-tests",
+      "text": "Running Tests",
+      "level": 3
+    },
+    {
+      "id": "readme-environment-variables",
+      "text": "Environment Variables",
+      "level": 2
+    },
+    {
+      "id": "readme-folder-structure",
+      "text": "Folder Structure",
+      "level": 2
+    },
+    {
+      "id": "readme-contributing",
+      "text": "Contributing",
+      "level": 2
+    },
+    {
+      "id": "readme-license",
+      "text": "License",
+      "level": 2
+    },
+    {
+      "id": "readme-patent",
+      "text": "Patent",
+      "level": 2
+    },
+    {
+      "id": "readme-author",
+      "text": "Author",
+      "level": 2
+    }
+  ],
+  "hasDiagrams": false,
+  "stats": {
+    "codeBlocks": 5,
+    "diagrams": 0,
+    "tables": 1,
+    "taskItems": 0,
+    "images": 0,
+    "words": 947,
+    "links": 4,
+    "headings": 17
+  },
+  "verifiedTags": [
+    "Python",
+    "PyQt5",
+    "scikit-learn",
+    "Pandas"
+  ],
+  "unverifiedTags": [],
+  "stale": false,
+  "html": "<h2 id=\"readme-auto-healing-ai--self-healing-server-monitoring--anomaly-detection-system\">Auto-Healing AI — Self-Healing Server Monitoring &amp; Anomaly Detection System<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-auto-healing-ai--self-healing-server-monitoring--anomaly-detection-system\">#</a></h2>\n<h3 id=\"readme-description\">Description<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-description\">#</a></h3>\n<p>Auto-Healing AI is an intelligent, self-healing server monitoring system that continuously tracks server metrics (CPU, memory, error rate), detects anomalies using machine learning (Isolation Forest), predicts future risks using trend analysis, and autonomously executes healing actions — all presented through a real-time PyQt5 live dashboard.</p>\n<p><strong>Purpose:</strong> Eliminate manual server monitoring and incident response by automating detection, diagnosis, and remediation.</p>\n<p><strong>Problem It Solves:</strong> Traditional monitoring tools only alert humans when something goes wrong. Auto-Healing AI goes further — it detects anomalous behavior, predicts emerging risks, and takes automated corrective actions (scaling resources, restarting services, reallocating loads) without human intervention, reducing downtime and operational overhead.</p>\n<p><strong>Patent:</strong> This project's self-healing methodology and dual-engine comparative monitoring architecture are protected under patent. All rights reserved.</p>\n<hr />\n<h3 id=\"readme-features\">Features<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-features\">#</a></h3>\n<ul>\n<li><strong>Real-time server metrics monitoring</strong> — CPU, Memory, and Error rate tracking for 4+ servers</li>\n<li><strong>ML-based anomaly detection</strong> — Isolation Forest algorithm identifies outliers in server behavior</li>\n<li><strong>Risk prediction engine</strong> — Weighted scoring + linear trend analysis forecasts future risk levels (Low / Medium / High)</li>\n<li><strong>Automated self-healing</strong> — Triggers corrective actions (scale CPU, restart memory-intensive services, restart faulty processes) when anomalies are detected</li>\n<li><strong>Dual-engine architecture</strong> — Compare normal (No Injection) vs failure-injected (Injected) engines side-by-side to validate detection accuracy</li>\n<li><strong>Live PyQt5 dashboard</strong> — Real-time graphs (pyqtgraph), snapshot bar charts (matplotlib), server metrics tables, and scrollable log viewer</li>\n<li><strong>Failure injection mode</strong> — Intentionally injects CPU spikes and error surges to test and validate the healing engine</li>\n<li><strong>Graph comparison tool</strong> — Automatically detects and highlights differences between normal and injected engine behavior</li>\n<li><strong>Comprehensive report generation</strong> — Auto-generated reports with charts (bar, pie, timeline), CSV exports, and incident summaries</li>\n<li><strong>Alert cooldown mechanism</strong> — Prevents alert fatigue by enforcing configurable cooldown periods per issue per server</li>\n<li><strong>Incident &amp; risk logging</strong> — All events persisted as JSONL files for audit and post-mortem analysis</li>\n<li><strong>Pytest test suite</strong> — Unit tests for core engine components</li>\n</ul>\n<hr />\n<h3 id=\"readme-tech-stack\">Tech Stack<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-tech-stack\">#</a></h3>\n<div class=\"table-wrap\"><table>\n<thead>\n<tr>\n<th>Layer</th>\n<th>Technology</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Language</td>\n<td>Python 3.8+</td>\n</tr>\n<tr>\n<td>UI Framework</td>\n<td>PyQt5</td>\n</tr>\n<tr>\n<td>Real-time Charts</td>\n<td>PyQtGraph</td>\n</tr>\n<tr>\n<td>Static Charts</td>\n<td>Matplotlib</td>\n</tr>\n<tr>\n<td>Data Processing</td>\n<td>Pandas, NumPy</td>\n</tr>\n<tr>\n<td>Anomaly Detection</td>\n<td>Scikit-learn (Isolation Forest)</td>\n</tr>\n<tr>\n<td>Testing</td>\n<td>Pytest</td>\n</tr>\n<tr>\n<td>Logging</td>\n<td>JSONL (JSON Lines)</td>\n</tr>\n</tbody></table></div>\n<hr />\n<h3 id=\"readme-installation\">Installation<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-installation\">#</a></h3>\n<h4 id=\"readme-prerequisites\">Prerequisites<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-prerequisites\">#</a></h4>\n<ul>\n<li>Python 3.8 or higher</li>\n<li>pip (Python package installer)</li>\n<li>(Optional) Virtual environment — recommended</li>\n</ul>\n<h4 id=\"readme-steps\">Steps<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-steps\">#</a></h4>\n<pre><code class=\"hljs language-bash\"><span class=\"hljs-comment\"># 1. Clone the repository</span>\ngit <span class=\"hljs-built_in\">clone</span> https://github.com/saisriramv/auto-healing-ai.git\n<span class=\"hljs-built_in\">cd</span> auto-healing-ai\n\n<span class=\"hljs-comment\"># 2. (Recommended) Create and activate a virtual environment</span>\npython -m venv venv\n.\\venv\\Scripts\\activate    <span class=\"hljs-comment\"># Windows</span>\n<span class=\"hljs-built_in\">source</span> venv/bin/activate   <span class=\"hljs-comment\"># Linux / macOS</span>\n\n<span class=\"hljs-comment\"># 3. Install dependencies</span>\npip install -r requirements.txt\n\n<span class=\"hljs-comment\"># 4. Run the live dashboard</span>\n<span class=\"hljs-built_in\">cd</span> ui\npython auto_healing_ui.py\n</code></pre>\n<hr />\n<h3 id=\"readme-usage\">Usage<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-usage\">#</a></h3>\n<h4 id=\"readme-live-dashboard\">Live Dashboard<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-live-dashboard\">#</a></h4>\n<ol>\n<li>Launch the UI: <code>cd ui &amp;&amp; python auto_healing_ui.py</code></li>\n<li>Click <strong>\"Start No Injection\"</strong> to begin monitoring with normal metrics</li>\n<li>Click <strong>\"Start Injected\"</strong> to begin monitoring with injected failures (CPU spikes, error surges)</li>\n<li>Watch real-time graphs, tables, and logs update automatically</li>\n<li>Use the <strong>\"Compare Graphs\"</strong> button to detect differences between engines</li>\n<li>Stop both engines, then click <strong>\"Generate Reports\"</strong> to create comprehensive reports</li>\n<li>View reports directly in the dashboard or open the <code>reports/</code> folder</li>\n<li>Use <strong>\"Export Comparison\"</strong> to save comparison data as CSV</li>\n</ol>\n<h4 id=\"readme-cli-mode-headless-monitoring\">CLI Mode (Headless Monitoring)<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-cli-mode-headless-monitoring\">#</a></h4>\n<pre><code class=\"hljs language-bash\">python app.py --cycles 10 --<span class=\"hljs-built_in\">sleep</span> 2\n</code></pre>\n<p>Runs 10 monitoring cycles with 2-second intervals between each cycle, generating metrics snapshots and logs.</p>\n<h4 id=\"readme-running-tests\">Running Tests<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-running-tests\">#</a></h4>\n<pre><code class=\"hljs language-bash\">pytest tests/tests_engine.py -v\n</code></pre>\n<hr />\n<h3 id=\"readme-environment-variables\">Environment Variables<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-environment-variables\">#</a></h3>\n<p>Create a <code>.env</code> file in the project root (optional overrides):</p>\n<pre><code class=\"hljs language-env\"># Anomaly detection sensitivity (0.0 - 0.5, default: 0.15)\nCONTAMINATION=0.15\n\n# Error rate threshold for alerts (default: 3.0)\nERROR_THRESHOLD=3.0\n\n# Cooldown between same-issue alerts in seconds (default: 5)\nCOOLDOWN_SECONDS=5\n\n# Number of history cycles for risk prediction (default: 10)\nHISTORY_LENGTH=10\n\n# Window size for moving averages (default: 5)\nRISK_WINDOW_SIZE=5\n\n# Enable/disable failure injection (default: True)\nINJECT_FAILURES=True\n</code></pre>\n<hr />\n<h3 id=\"readme-folder-structure\">Folder Structure<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-folder-structure\">#</a></h3>\n<pre><code class=\"hljs\">auto-healing-ai/\n├── app.py                  # CLI entry point — runs monitoring cycles\n├── config.py               # Central configuration (servers, thresholds)\n├── engine.py               # Core engine: metrics, anomaly detection, healing\n├── engine_inject.py        # Extended engine with failure injection\n├── risk_prediction.py      # Risk scoring and trend analysis\n├── risk_utils.py           # Utility functions (moving average, trend, score)\n├── requirements.txt        # Python dependencies\n├── logs/                   # Incident and risk warning logs (JSONL)\n│   ├── incidents.jsonl\n│   ├── incidents_inject.jsonl\n│   ├── risk_warnings.jsonl\n│   └── incidents.log\n├── reports/                # Generated reports and charts\n│   ├── auto_healing_report_*.txt\n│   ├── metrics_*.csv\n│   ├── comparison_*.csv\n│   ├── cpu_comparison_bar_*.png\n│   ├── memory_comparison_bar_*.png\n│   ├── incident_timeline.png\n│   └── ...\n├── tests/\n│   └── tests_engine.py     # Pytest unit tests\n├── ui/\n│   ├── auto_healing_ui.py  # PyQt5 live dashboard\n│   └── analyze_logs.py     # Log analysis and report generation\n└── README.md\n</code></pre>\n<hr />\n<h3 id=\"readme-contributing\">Contributing<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-contributing\">#</a></h3>\n<p>Contributions are welcome! Since this project is patent-protected, please follow these guidelines:</p>\n<ol>\n<li>Fork the repository</li>\n<li>Create a feature branch (<code>git checkout -b feature/amazing-feature</code>)</li>\n<li>Commit your changes (<code>git commit -m 'Add amazing feature'</code>)</li>\n<li>Push to the branch (<code>git push origin feature/amazing-feature</code>)</li>\n<li>Open a Pull Request</li>\n</ol>\n<p>For major changes, please open an issue first to discuss what you would like to change.</p>\n<hr />\n<h3 id=\"readme-license\">License<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-license\">#</a></h3>\n<p>MIT License — see the <a href=\"https://github.com/SaiSriRam-Vanama/Self-Adaptive-AI-Engine-for-Auto-Healing-Cloud-Infrastructure/blob/main/LICENSE\" target=\"_blank\" rel=\"noopener noreferrer\">LICENSE</a> file for details.</p>\n<hr />\n<h3 id=\"readme-patent\">Patent<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-patent\">#</a></h3>\n<p>This project's self-healing methodology, dual-engine comparative monitoring architecture, and automated anomaly remediation system are protected under patent. All rights reserved. Unauthorized use, reproduction, or distribution of the patented technology is prohibited.</p>\n<hr />\n<h3 id=\"readme-author\">Author<a class=\"anchor\" aria-label=\"Link to this section\" href=\"#readme-author\">#</a></h3>\n<p><strong>Vanama Sai Sri Ram</strong></p>\n<ul>\n<li>Email: <a href=\"mailto:saisriram2796@gmail.com\">saisriram2796@gmail.com</a></li>\n<li>LinkedIn: <a href=\"https://linkedin.com/in/saisriramv\" target=\"_blank\" rel=\"noopener noreferrer\">saisriramv</a></li>\n<li>GitHub: <a href=\"https://github.com/saisriramv\" target=\"_blank\" rel=\"noopener noreferrer\">saisriramv</a></li>\n</ul>\n<hr />\n<p><em>Built with Python, PyQt5, and Machine Learning</em></p>\n"
+}

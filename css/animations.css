@@ -1,0 +1,115 @@
+/* ==========================================================================
+   Animations - ticker loop, scroll reveal and reduced-motion handling
+   ========================================================================== */
+
+.tk div {
+  animation: mq 40s linear infinite;
+}
+
+.tk:hover div {
+  animation-play-state: paused;
+}
+
+@keyframes mq {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.js .rv {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity .4s,transform .4s;
+}
+
+.js .rv.in {
+  opacity: 1;
+  transform: none;
+}
+
+.ph .me {
+  animation: hero-profile-float 5.5s ease-in-out infinite;
+}
+
+.ph .rg {
+  animation: hero-ring-rotate 35s linear infinite,
+    hero-ring-pulse 4s ease-in-out infinite;
+}
+
+.st.s1 {
+  animation: hero-tag-float-left 5.5s ease-in-out .4s infinite;
+}
+
+.st.s2 {
+  animation: hero-tag-float-right 5.5s ease-in-out 1.1s infinite;
+}
+
+.identity strong {
+  animation: hero-fade-up .45s ease-out both;
+}
+
+.identity-details {
+  animation: hero-fade-up .45s ease-out .2s both;
+}
+
+@keyframes hero-profile-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes hero-ring-rotate {
+  to { transform: rotate(1turn); }
+}
+
+@keyframes hero-ring-pulse {
+  0%, 100% { opacity: .48; scale: 1; }
+  50% { opacity: .58; scale: 1.025; }
+}
+
+@keyframes hero-tag-float-left {
+  0%, 100% { transform: rotate(-4deg) translateY(0); }
+  50% { transform: rotate(-4deg) translateY(-3px); }
+}
+
+@keyframes hero-tag-float-right {
+  0%, 100% { transform: rotate(3deg) translateY(0); }
+  50% { transform: rotate(3deg) translateY(-3px); }
+}
+
+@keyframes hero-fade-up {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  .tk div {
+    animation: none;
+  }
+  .js .rv {
+    opacity: 1;
+    transform: none;
+  }
+  .bt:hover,
+  .cd:hover,
+  .cd.rv.in:hover,
+  .ch:hover,
+  .identity.cd:hover,
+  .pl.b:hover span,
+  .cs:hover span,
+  .rel:hover .cs span {
+    transform: none !important;
+  }
+  .bt:hover i {
+    transform: rotate(-45deg) !important;
+  }
+  .bg:hover::before {
+    transform: scaleX(0) !important;
+  }
+}

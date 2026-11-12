@@ -1,0 +1,879 @@
+/* ==========================================================================
+   Case study - project page (/projects/<slug>) and README typography
+   ========================================================================== */
+
+/* Opened directly on a case-study URL: never flash the home page (see public/js/route-init.js) */
+html[data-initial='case'] #home-view {
+  display: none;
+}
+
+#case-view {
+  padding: clamp(32px, 5vw, 56px) 0 clamp(72px, 10vw, 112px);
+  outline: none;
+}
+
+/* ---------- header ---------- */
+.cs-back {
+  margin: 0 0 28px;
+  font: 500 14px var(--sans);
+}
+
+.cs-back a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border: 1px solid var(--ln);
+  border-radius: 999px;
+  background: var(--sf);
+  color: var(--mu);
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.cs-back a:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+.cs-head h1 {
+  margin: 16px 0 12px;
+  font-size: clamp(2.6rem, 6vw, 4.4rem);
+  outline: none;
+}
+
+.cs-head .sb {
+  margin: 0 0 18px;
+}
+
+.cs-lead {
+  max-width: 62ch;
+  margin: 0 0 28px;
+  color: var(--mu);
+  font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+}
+
+.cs-shot {
+  margin: 44px 0 0;
+}
+
+.cs-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top;
+  border: 1.5px solid var(--ink);
+  border-radius: 16px;
+  background: var(--alt);
+}
+
+/* ---------- metadata strip ---------- */
+.cs-meta {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 32px 0 0;
+  border-top: 1.5px solid var(--ink);
+}
+
+.cs-meta > div {
+  padding: 18px 16px 0 0;
+}
+
+.cs-meta > div + div {
+  padding-left: 20px;
+  border-left: 1px solid var(--ln);
+}
+
+.cs-meta dt {
+  margin-bottom: 8px;
+}
+
+.cs-meta dd {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.cs-meta a {
+  border-bottom: 1.5px solid var(--ln);
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.cs-meta a:hover {
+  color: var(--ac);
+  border-color: var(--ac);
+}
+
+.cs-note {
+  display: block;
+  margin-top: 2px;
+  color: var(--mu);
+  font-size: 13px;
+}
+
+.cs-stack {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 16px;
+  margin-top: 24px;
+}
+
+.cs-stack ul.tgs {
+  flex-wrap: wrap;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: visible;
+}
+
+/* ---------- layout: contents + README ---------- */
+.cs-layout {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 56px;
+  align-items: start;
+  margin-top: 56px;
+  padding-top: 48px;
+  border-top: 1px solid var(--ln);
+}
+
+.cs-layout:not(:has(.cs-toc)) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.cs-main {
+  min-width: 0;
+}
+
+.cs-toc {
+  position: sticky;
+  top: calc(env(safe-area-inset-top, 0px) + 92px);
+  max-height: calc(100vh - 128px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.cs-toc summary {
+  margin-bottom: 14px;
+  list-style: none;
+  cursor: default;
+}
+
+.cs-toc summary::-webkit-details-marker {
+  display: none;
+}
+
+.cs-toc ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-left: 1px solid var(--ln);
+}
+
+.cs-toc li a {
+  display: block;
+  margin-left: -1px;
+  padding: 6px 0 6px 14px;
+  border-left: 2px solid transparent;
+  color: var(--mu);
+  font-size: 14px;
+  line-height: 1.4;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.cs-toc li a:hover {
+  color: var(--ink);
+}
+
+.cs-toc li a[aria-current='true'] {
+  color: var(--ac);
+  border-left-color: var(--ac);
+  font-weight: 500;
+}
+
+.cs-notice,
+.cs-fallback {
+  margin: 0 0 24px;
+  padding: 20px 24px;
+  border: 1px solid var(--ln);
+  border-radius: 16px;
+  background: var(--sf);
+  color: var(--mu);
+  font-size: 15px;
+}
+
+.cs-fallback h2 {
+  margin-bottom: 10px;
+  color: var(--ink);
+  font-size: 1.6rem;
+}
+
+.cs-fallback p {
+  margin: 0 0 16px;
+}
+
+/* ---------- closing actions + related ---------- */
+.cs-end {
+  margin-top: 72px;
+  padding: 32px;
+  border: 1.5px solid var(--ink);
+  border-radius: 16px;
+  background: var(--sf);
+}
+
+.cs-end h2 {
+  margin-bottom: 20px;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.cs-related {
+  margin-top: 72px;
+}
+
+.cs-related h2 {
+  margin-bottom: 24px;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.rel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  padding: 24px;
+}
+
+.rel-title {
+  font: 500 1.4rem/1.2 var(--serif);
+  letter-spacing: -0.02em;
+}
+
+.rel-desc {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--mu);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.rel .cs {
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.rel:hover .cs span {
+  transform: translateX(4px);
+}
+
+.cs-notfound {
+  padding-top: 24px;
+}
+
+.cs-notfound h1 {
+  margin: 16px 0 12px;
+  font-size: clamp(2.6rem, 6vw, 4.4rem);
+  outline: none;
+}
+
+/* ==========================================================================
+   README typography (content comes from the repository, rendered at build time)
+   ========================================================================== */
+.readme {
+  min-width: 0;
+  font-size: 16.5px;
+  line-height: 1.75;
+  overflow-wrap: break-word;
+}
+
+.readme > :first-child {
+  margin-top: 0;
+}
+
+.readme h2,
+.readme h3,
+.readme h4,
+.readme h5,
+.readme h6 {
+  position: relative;
+  scroll-margin-top: 92px;
+}
+
+.readme h2 {
+  margin: 2.6em 0 0.7em;
+  padding-top: 1.1em;
+  border-top: 1px solid var(--ln);
+  font-size: clamp(1.7rem, 3.2vw, 2.2rem);
+}
+
+.readme > h2:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.readme h3 {
+  margin: 2em 0 0.55em;
+  font-size: clamp(1.35rem, 2.4vw, 1.6rem);
+}
+
+.readme h4 {
+  margin: 1.8em 0 0.4em;
+  font: 600 1.1rem/1.4 var(--sans);
+  letter-spacing: 0;
+}
+
+.readme h5,
+.readme h6 {
+  margin: 1.6em 0 0.4em;
+  color: var(--mu);
+  font: 500 12px/1.4 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.readme .anchor {
+  margin-left: 0.4em;
+  color: var(--mu);
+  font: 500 0.7em var(--mono);
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.readme :is(h2, h3, h4, h5, h6):hover .anchor,
+.readme .anchor:focus-visible {
+  opacity: 1;
+}
+
+.readme p {
+  margin: 0 0 1.1em;
+}
+
+.readme a {
+  color: var(--ac);
+  text-decoration: underline;
+  text-decoration-color: var(--ln);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s;
+}
+
+.readme a:hover {
+  text-decoration-color: var(--ac);
+}
+
+.readme .anchor {
+  text-decoration: none;
+}
+
+.readme ul,
+.readme ol {
+  margin: 0 0 1.2em;
+  padding-left: 1.5em;
+}
+
+.readme li {
+  margin: 0.3em 0;
+}
+
+.readme li > :is(ul, ol) {
+  margin: 0.3em 0 0.5em;
+}
+
+.readme li:has(> input[type='checkbox']) {
+  list-style: none;
+}
+
+.readme li > input[type='checkbox'] {
+  margin: 0 0.55em 0.15em -1.4em;
+  vertical-align: middle;
+  accent-color: var(--ac);
+}
+
+.readme strong {
+  font-weight: 600;
+}
+
+.readme hr {
+  margin: 2.4em 0;
+  border: 0;
+  border-top: 1px solid var(--ln);
+}
+
+.readme blockquote {
+  margin: 0 0 1.3em;
+  padding: 14px 20px;
+  border-left: 3px solid var(--ac);
+  border-radius: 0 12px 12px 0;
+  background: var(--alt);
+}
+
+/* ---------- Cyber Hygiene editorial case study ---------- */
+.cyber-study {
+  max-width: 1040px;
+}
+
+.cyber-head {
+  max-width: 880px;
+  margin-bottom: clamp(40px, 7vw, 72px);
+}
+
+.cyber-head h1 {
+  max-width: 19ch;
+}
+
+.cyber-section {
+  padding: clamp(28px, 5vw, 48px) 0;
+  border-top: 1px solid var(--ln);
+  scroll-margin-top: 92px;
+}
+
+.cyber-section-heading {
+  margin-bottom: 24px;
+}
+
+.cyber-section-heading > span {
+  color: var(--ac);
+}
+
+.cyber-section-heading h2 {
+  margin: 10px 0 0;
+  font: 500 clamp(1.8rem, 3.4vw, 2.5rem)/1.15 var(--serif);
+  letter-spacing: -0.025em;
+}
+
+.cyber-copy,
+.cyber-section > p {
+  max-width: 72ch;
+  color: var(--mu);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.cyber-overview-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(230px, 0.7fr);
+  gap: clamp(24px, 5vw, 64px);
+  align-items: start;
+}
+
+.cyber-overview-grid .cyber-copy {
+  margin: 0;
+  font-size: 18px;
+}
+
+.cyber-facts {
+  margin: 0;
+  border-top: 1px solid var(--ln);
+}
+
+.cyber-facts > div {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--ln);
+}
+
+.cyber-facts dt {
+  margin-bottom: 5px;
+  color: var(--mu);
+}
+
+.cyber-facts dd {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.cyber-badges,
+.cyber-tech-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cyber-badges li {
+  padding: 10px 12px;
+  border: 1px solid var(--ln);
+  border-radius: 8px;
+  color: var(--mu);
+  font: 500 12px/1.35 var(--mono);
+}
+
+.cyber-list {
+  display: grid;
+  gap: 12px;
+  max-width: 76ch;
+  margin: 20px 0 0;
+  padding-left: 22px;
+  color: var(--mu);
+  line-height: 1.7;
+}
+
+.cyber-list li::marker {
+  color: var(--ac);
+}
+
+.cyber-objectives {
+  padding-left: 28px;
+}
+
+.cyber-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.cyber-feature {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid var(--ln);
+  border-radius: 12px;
+  background: var(--sf);
+}
+
+.cyber-feature:last-child {
+  grid-column: 1 / -1;
+}
+
+.cyber-feature > span {
+  color: var(--ac);
+}
+
+.cyber-feature h3,
+.cyber-flow-node h3,
+.cyber-implementation-grid h3 {
+  margin: 10px 0 8px;
+  font: 500 1.25rem/1.3 var(--serif);
+}
+
+.cyber-feature p,
+.cyber-flow-node p,
+.cyber-implementation-grid p {
+  margin: 0;
+  color: var(--mu);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.cyber-flow {
+  display: grid;
+  max-width: 760px;
+  margin: 28px auto 0;
+}
+
+.cyber-flow-node {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+  padding: 20px 22px;
+  border: 1px solid var(--ln);
+  border-radius: 12px;
+  background: var(--sf);
+}
+
+.cyber-flow-node > .mono {
+  padding-top: 12px;
+  color: var(--ac);
+}
+
+.cyber-flow-node h3 {
+  margin-top: 0;
+}
+
+.cyber-flow-arrow {
+  height: 36px;
+  color: var(--ac);
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.cyber-tech-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cyber-tech-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid var(--ln);
+  border-radius: 10px;
+  background: var(--sf);
+}
+
+.cyber-tech-list strong {
+  font: 500 1.05rem/1.35 var(--serif);
+}
+
+.cyber-tech-list span {
+  color: var(--mu);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.cyber-implementation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.cyber-implementation-grid > div:last-child {
+  grid-column: 1 / -1;
+}
+
+.cyber-note {
+  margin-top: 28px;
+  padding: 20px 22px;
+  border-left: 2px solid var(--ac);
+  background: var(--alt);
+}
+
+.cyber-note > span {
+  color: var(--ac);
+}
+
+.cyber-note p {
+  margin: 10px 0 0;
+  color: var(--mu);
+  line-height: 1.7;
+}
+
+.cyber-disclaimer {
+  margin: 20px 0 0;
+  color: var(--mu);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.cyber-shot-empty {
+  display: grid;
+  min-height: 230px;
+  place-content: center;
+  padding: 32px;
+  border: 1px dashed var(--ln);
+  border-radius: 14px;
+  background: var(--alt);
+  text-align: center;
+}
+
+.cyber-shot-empty .mono {
+  color: var(--ac);
+}
+
+.cyber-shot-empty p {
+  max-width: 54ch;
+  margin: 12px auto 0;
+  color: var(--mu);
+  line-height: 1.65;
+}
+
+.cyber-project-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px 24px;
+}
+
+.cyber-project-links .cyber-disclaimer {
+  flex: 1 1 280px;
+  margin: 0;
+  color: var(--ink);
+}
+
+.readme blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.readme img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.readme p > img,
+.readme a > img {
+  margin: 2px 2px 2px 0;
+}
+
+.readme .img-failed {
+  color: var(--mu);
+  font: 500 12px var(--mono);
+}
+
+.readme kbd {
+  padding: 2px 6px;
+  border: 1px solid var(--ln);
+  border-bottom-width: 2px;
+  border-radius: 6px;
+  background: var(--sf);
+  font: 500 0.85em var(--mono);
+}
+
+.readme details {
+  margin: 0 0 1.2em;
+  padding: 12px 18px;
+  border: 1px solid var(--ln);
+  border-radius: 12px;
+  background: var(--sf);
+}
+
+.readme summary {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* inline code and code blocks */
+.readme :not(pre) > code {
+  padding: 0.15em 0.4em;
+  border: 1px solid var(--ln);
+  border-radius: 6px;
+  background: var(--alt);
+  font: 500 0.88em var(--mono);
+  overflow-wrap: break-word;
+}
+
+/* keep identifiers such as ALERT_RECIPIENT_EMAIL whole; the table scrolls if it must */
+.readme td:first-child code {
+  white-space: nowrap;
+}
+
+.readme pre {
+  /* Code blocks use the same dark panel as the contact section, in both themes. */
+  --c-key: #8fa8ff;
+  --c-str: #4fc38a;
+  --c-com: #a0a5b0;
+  margin: 0 0 1.4em;
+  padding: 18px 22px;
+  overflow-x: auto;
+  border-radius: 16px;
+  background: var(--pn);
+  color: var(--pt);
+  font: 500 13.5px/1.7 var(--mono);
+  tab-size: 2;
+}
+
+.readme pre code {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+}
+
+.readme .hljs-keyword,
+.readme .hljs-built_in,
+.readme .hljs-type,
+.readme .hljs-literal,
+.readme .hljs-section,
+.readme .hljs-tag,
+.readme .hljs-name,
+.readme .hljs-selector-tag,
+.readme .hljs-selector-id,
+.readme .hljs-selector-class {
+  color: var(--c-key);
+}
+
+.readme .hljs-string,
+.readme .hljs-regexp,
+.readme .hljs-symbol,
+.readme .hljs-bullet,
+.readme .hljs-addition {
+  color: var(--c-str);
+}
+
+.readme .hljs-comment,
+.readme .hljs-quote,
+.readme .hljs-meta,
+.readme .hljs-deletion {
+  color: var(--c-com);
+  font-style: italic;
+}
+
+.readme .hljs-title,
+.readme .hljs-attr,
+.readme .hljs-attribute,
+.readme .hljs-number,
+.readme .hljs-variable,
+.readme .hljs-template-variable,
+.readme .hljs-strong {
+  color: var(--pt);
+  font-weight: 600;
+}
+
+.readme .hljs-emphasis {
+  font-style: italic;
+}
+
+/* tables */
+.readme .table-wrap {
+  margin: 0 0 1.5em;
+  overflow-x: auto;
+  border: 1px solid var(--ln);
+  border-radius: 12px;
+  background: var(--sf);
+}
+
+.readme table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.readme th {
+  padding: 12px 16px;
+  background: var(--alt);
+  font: 500 12px/1.3 var(--mono);
+  letter-spacing: 0.06em;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.readme td {
+  padding: 12px 16px;
+  border-top: 1px solid var(--ln);
+  vertical-align: top;
+}
+
+.readme td :is(p, ul, ol):last-child {
+  margin-bottom: 0;
+}
+
+/* diagrams (Mermaid) */
+.readme figure.diagram {
+  margin: 0 0 1.6em;
+  padding: 24px;
+  overflow-x: auto;
+  border: 1px solid var(--ln);
+  border-radius: 16px;
+  background: var(--sf);
+  text-align: center;
+}
+
+.readme figure.diagram svg {
+  /* wide diagrams keep readable text and scroll sideways inside the figure */
+  min-width: 840px;
+  height: auto;
+}
+
+.readme figure.diagram .diagram-src {
+  margin: 0;
+  text-align: left;
+}

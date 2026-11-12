@@ -1,0 +1,110 @@
+/* ==========================================================================
+   Experience - timeline, education and credential cards
+   ========================================================================== */
+
+.tl {
+  border-left: 1.5px solid var(--ink);
+  margin: 0 0 56px 7px;
+  padding-left: 34px;
+}
+
+.ti {
+  position: relative;
+  padding-bottom: 36px;
+}
+
+.ti:last-child {
+  padding-bottom: 0;
+}
+
+.ti::before {
+  content: "";
+  position: absolute;
+  left: -43px;
+  top: 7px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 3.5px solid var(--ac);
+}
+
+.ti h3 {
+  font-size: 1.5rem;
+}
+
+.ti .mono {
+  margin: 8px 0 12px;
+  display: block;
+}
+
+.ti p {
+  margin: 0 0 6px;
+  color: var(--mu);
+  font-size: 15px;
+}
+
+.eg {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 24px;
+}
+
+.ec {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ec b {
+  font: 500 2.6rem/1 var(--serif);
+}
+
+.ec h3 {
+  font-size: 1.25rem;
+}
+
+.ec p {
+  margin: 0;
+  color: var(--mu);
+  font-size: 14px;
+}
+
+.lg2 {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.education {
+  margin-top: 0;
+}
+
+.lc {
+  padding: 26px;
+}
+
+.lc ul {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+}
+
+.lc li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  border-top: 1px solid var(--ln);
+  font-size: 15px;
+}
+
+.lc li .mono {
+  text-align: right;
+  flex: none;
+  max-width: 45%;
+  text-transform: none;
+  letter-spacing: .02em;
+}

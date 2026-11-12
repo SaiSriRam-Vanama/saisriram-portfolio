@@ -1,0 +1,51 @@
+/* ==========================================================================
+   About - lead paragraph and "Currently" card
+   ========================================================================== */
+
+.ab {
+  display: grid;
+  grid-template-columns: minmax(0,7fr) minmax(0,5fr);
+  gap: 56px;
+}
+
+.ab p {
+  margin: 0 0 20px;
+  color: var(--mu);
+}
+
+.ab p:first-child {
+  color: var(--ink);
+  font: 500 clamp(1.3rem,2.3vw,1.6rem)/1.45 var(--serif);
+}
+
+.cu {
+  background: var(--sf);
+  border: 1px solid var(--ln);
+  border-radius: 16px;
+  padding: 28px;
+  align-self: start;
+}
+
+.cu li {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid var(--ln);
+  font-size: 15px;
+}
+
+.cu ul {
+  margin: 16px 0 0;
+  padding: 0;
+}
+
+.cu li::before {
+  content: "";
+  flex: none;
+  width: 9px;
+  height: 9px;
+  margin-top: 9px;
+  background: var(--ac);
+  border-radius: 2px;
+}

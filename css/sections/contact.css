@@ -1,0 +1,47 @@
+/* ==========================================================================
+   Contact - dark contact panel
+   ========================================================================== */
+
+#contact {
+  padding-top: 0;
+}
+
+.ct {
+  background: var(--pn);
+  color: var(--pt);
+  border-radius: 28px;
+  padding: clamp(32px,6vw,72px);
+}
+
+.ct h2 {
+  font-size: clamp(2.2rem,5vw,3.8rem);
+  max-width: 15ch;
+  margin-top: 18px;
+}
+
+.ct p {
+  max-width: 56ch;
+  opacity: .75;
+  margin: 20px 0 32px;
+}
+
+.ct .mono {
+  color: var(--pt);
+  opacity: .6;
+}
+
+.ci {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 24px;
+  margin-top: 44px;
+  padding-top: 28px;
+  border-top: 1px solid var(--pt);
+}
+
+.ci a {
+  display: block;
+  margin-top: 8px;
+  border-bottom: 1px solid var(--pt);
+  width: fit-content;
+}
