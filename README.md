@@ -4,7 +4,7 @@ Computer Engineering (Artificial Intelligence) Student | Software Developer | AI
 
 I build software applications and AI-powered solutions using Python, machine learning, and modern web technologies to solve real-world problems.
 
-- **Portfolio Website** — sai-sri-ram-portfolio.vercel.app
+- **Portfolio Website** — https://saisriramvanama.vercel.app/
 - **GitHub** — https://github.com/SaiSriRam-Vanama
 - **LinkedIn** — https://www.linkedin.com/in/saisriramv/
 
@@ -157,53 +157,6 @@ sai-sri-ram-portfolio/
 │   └── lib/markdown.mjs      # Markdown renderer with mermaid
 ├── vercel.json               # Vercel deployment config
 └── vite.config.js            # Vite configuration with SPA fallback
-```
-
----
-
-## Run Locally
-
-Based on `package.json`:
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/SaiSriRam-Vanama/sai-sri-ram-portfolio.git
-   cd sai-sri-ram-portfolio
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
-   The site will open at `http://localhost:5173`.
-
-4. **Build for production**
-   ```bash
-   npm run build
-   ```
-   Output goes to the `dist/` directory.
-
----
-
-## Deployment
-
-Based on `vercel.json` and `vite.config.js`:
-
-The portfolio can be deployed on Vercel. The `vite.config.js` includes a SPA fallback plugin that copies `index.html` as `404.html` for GitHub Pages compatibility. The `public/_redirects` file provides Netlify/Cloudflare Pages fallback configuration.
-
-To deploy on Vercel:
-1. Push the repository to GitHub
-2. Import the repository to Vercel
-3. The `vercel.json` configures SPA rewrites automatically
-
-Or use the Vercel CLI:
-```bash
-npx vercel
 ```
 
 ---
